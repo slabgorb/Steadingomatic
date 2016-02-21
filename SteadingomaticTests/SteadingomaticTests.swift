@@ -21,16 +21,20 @@ class SteadingomaticTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWordSetPick() {
+        let wordSet = WordSet(values: ["apple","pear"])
+        XCTAssert(["apple", "pear"].contains(wordSet.pick()))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testWordPick() {
+        let wordSet = WordSet(values: ["apple","pear"])
+        let words = Words(sets:["nouns": wordSet])
+        XCTAssert(["apple", "pear"].contains(words.pick("nouns")))
+    }
+
+    func testSubstitutionTemplate() {
+        let subTemplate = SubstitutionTemplate(filepath: "SteadingWords")
+        XCTAssert(true)
     }
     
 }
