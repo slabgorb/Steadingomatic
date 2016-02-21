@@ -15,6 +15,15 @@ enum Population:Int {
     case Steady
     case Growing
     case Booming
+    func toString() -> String {
+        switch self {
+        case .Exodus: return "Exodus"
+        case .Shrinking: return "Shrinking"
+        case .Steady: return "Steady"
+        case .Growing: return "Growing"
+        case .Booming: return "Booming"
+        }
+    }
 }
 
 enum Prosperity:Int {
