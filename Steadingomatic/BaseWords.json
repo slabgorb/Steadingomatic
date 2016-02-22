@@ -1,9 +1,17 @@
 {
     "patterns":[
-    
-    ],
+                "the <plural_noun> of the <general_adjective> <noun>",
+                "the <plural_noun>",
+                "the <general_adjective> <plural_noun>",
+                "<start_noun> of the <noun>",
+                "<prefix>-<start_noun> of the <plural_noun>",
+                "<prefix>|<start_noun>",
+                "<start_noun> of the <plural_noun>",
+                "<plural_noun> of the <noun>",
+                "<adjective>|<start_noun>"
+                ],
     "words":{
-        "prefix":[
+        "prefix":[
                   "after",
                   "arch",
                   "dozen",

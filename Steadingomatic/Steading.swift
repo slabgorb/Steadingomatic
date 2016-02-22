@@ -153,7 +153,7 @@ struct Steading {
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
-    let name_template = SubstitutionTemplate(filepaths: ["SteadingWords"])
+    let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
     
     func defaults() -> (Prosperity, Population, Defenses) {
         switch self.size {
@@ -169,7 +169,7 @@ struct Steading {
     }
     
     init(size:Size) {
-        self.name = name_template.pick()
+        self.name = nameTemplate.pick()
         self.size = size
         (self.prosperity, self.population, self.defenses) = defaults()
     }

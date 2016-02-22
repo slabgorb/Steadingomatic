@@ -10,6 +10,10 @@
 		2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD161C7BA7F4001DF3CD /* Front.swift */; };
 		2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD181C7BA7FE001DF3CD /* Danger.swift */; };
 		2467CD1B1C7BAAEF001DF3CD /* BaseWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */; };
+		2467CD1D1C7BAF1C001DF3CD /* ThievesGuildWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */; };
+		2467CD211C7BC023001DF3CD /* Doom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD201C7BC023001DF3CD /* Doom.swift */; };
+		2467CD231C7BC43D001DF3CD /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD221C7BC43D001DF3CD /* Pluralize.swift */; };
+		2467CD251C7BC583001DF3CD /* CultWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD241C7BC583001DF3CD /* CultWords.json */; };
 		247DAADA1C7A48C10070A7FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DAAD91C7A48C10070A7FC /* String.swift */; };
 		24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8191C779AEF00A2460E /* AppDelegate.swift */; };
 		24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B81B1C779AEF00A2460E /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		2467CD161C7BA7F4001DF3CD /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
 		2467CD181C7BA7FE001DF3CD /* Danger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Danger.swift; sourceTree = "<group>"; };
 		2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BaseWords.json; sourceTree = "<group>"; };
+		2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThievesGuildWords.json; sourceTree = "<group>"; };
+		2467CD201C7BC023001DF3CD /* Doom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doom.swift; sourceTree = "<group>"; };
+		2467CD221C7BC43D001DF3CD /* Pluralize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pluralize.swift; sourceTree = "<group>"; };
+		2467CD241C7BC583001DF3CD /* CultWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CultWords.json; sourceTree = "<group>"; };
 		247DAAD91C7A48C10070A7FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		24C5B8161C779AEF00A2460E /* Steadingomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadingomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5B8191C779AEF00A2460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 			children = (
 				247DAAD91C7A48C10070A7FC /* String.swift */,
 				24E621D91C7B5F5F00E27DE2 /* NSScanner+Swift.swift */,
+				2467CD221C7BC43D001DF3CD /* Pluralize.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -198,20 +207,13 @@
 		24C5B8531C77A23100A2460E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				24C5B8581C77A90300A2460E /* SubstitutionTemplate */,
+				24C5B8561C77A79D00A2460E /* SubstitutionTemplate.swift */,
 				24C5B8541C77A24200A2460E /* Steading.swift */,
 				2467CD161C7BA7F4001DF3CD /* Front.swift */,
 				2467CD181C7BA7FE001DF3CD /* Danger.swift */,
+				2467CD201C7BC023001DF3CD /* Doom.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		24C5B8581C77A90300A2460E /* SubstitutionTemplate */ = {
-			isa = PBXGroup;
-			children = (
-				24C5B8561C77A79D00A2460E /* SubstitutionTemplate.swift */,
-			);
-			name = SubstitutionTemplate;
 			sourceTree = "<group>";
 		};
 		24C5B85B1C77C86000A2460E /* Data */ = {
@@ -219,6 +221,8 @@
 			children = (
 				24C5B85E1C77C8AA00A2460E /* SteadingWords.json */,
 				2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */,
+				2467CD241C7BC583001DF3CD /* CultWords.json */,
+				2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -340,6 +344,8 @@
 				24C5B84E1C779F2100A2460E /* librebaskerville-regular-webfont.ttf in Resources */,
 				24C5B84D1C779F2100A2460E /* librebaskerville-italic-webfont.ttf in Resources */,
 				24C5B85F1C77C8AA00A2460E /* SteadingWords.json in Resources */,
+				2467CD251C7BC583001DF3CD /* CultWords.json in Resources */,
+				2467CD1D1C7BAF1C001DF3CD /* ThievesGuildWords.json in Resources */,
 				24C5B84C1C779F2100A2460E /* librebaskerville-bold-webfont.ttf in Resources */,
 				24C5B8211C779AEF00A2460E /* Assets.xcassets in Resources */,
 				24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */,
@@ -371,6 +377,7 @@
 				2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */,
 				2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */,
 				24C5B8551C77A24200A2460E /* Steading.swift in Sources */,
+				2467CD211C7BC023001DF3CD /* Doom.swift in Sources */,
 				24C5B8571C77A79D00A2460E /* SubstitutionTemplate.swift in Sources */,
 				24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */,
 				24E621DA1C7B5F5F00E27DE2 /* NSScanner+Swift.swift in Sources */,
@@ -378,6 +385,7 @@
 				24C5B8501C77A18D00A2460E /* SteadingsTableViewController.swift in Sources */,
 				24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */,
 				24E621E31C7B800800E27DE2 /* SteadingDetailView.swift in Sources */,
+				2467CD231C7BC43D001DF3CD /* Pluralize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,11 +19,12 @@ public struct Words {
     public mutating func add(key: String, set: WordSet) -> Void {
         self.sets[key] = set
         self.sets["short_\(key)"] = WordSet(values: set.values.filter({$0.characters.count < Words.shortCutoff}))
+        self.sets["plural_\(key)"] = WordSet(values: set.values.map({$0.pluralize()}))
     }
     
     public mutating func add(key: String, words: [String]) -> Void {
-        self.sets[key] = WordSet(values: words)
-        self.sets["short_\(key)"] = WordSet(values: words.filter({$0.characters.count < Words.shortCutoff}))
+        self.add(key, set: WordSet(values: words))
+
     }
 
     public func get(key: String) -> [String] {

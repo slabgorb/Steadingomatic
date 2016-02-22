@@ -1,0 +1,62 @@
+{
+    "start_nouns":[
+                   "syndicate",
+                   "association",
+                   "cartel",
+                   "gang",
+                   "mob",
+                   "organization",
+                   "ring",
+                   "union",
+                   "board",
+                   "bunch",
+                   "chamber",
+                   "committee",
+                   "company",
+                   "council",
+                   "crew",
+                   "group",
+                   "outfit",
+                   "partnership"
+                   ],
+    "noun":[
+            "blade",
+            "fence",
+            "pilferers",
+            "peculation",
+            "misappropriation",
+            "withdrawal",
+            "pinchers",
+            "theif",
+            "poach",
+            "poacher",
+            "purloiner",
+            "pirate",
+            "burglar",
+            "larceny"
+            ],
+    "adjective":[
+                 "petty",
+                 "involuntary",
+                 "quick",
+                 "hidden",
+                 "peculiar",
+                 "old",
+                 "new",
+                 "larcenous",
+                 "deft",
+                 "adroit",
+                 "apt",
+                 "neat",
+                 "prompt",
+                 "dexterous",
+                 "criminal"
+                 ],
+    "patterns":[  
+                "the <start_noun> of <adjective> <noun>",
+                "<adjective> <start_noun> of <noun>",
+                "<adjective> <start_noun>",
+                "<plural_noun> <start_noun>",
+                "<plural_noun> <adjective> <start_noun>"
+                ]
+}

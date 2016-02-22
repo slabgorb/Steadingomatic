@@ -1,5 +1,5 @@
 //
-//  Front.swift
+//  Doom.swift
 //  Steadingomatic
 //
 //  Created by Keith Avery on 2/22/16.
@@ -8,7 +8,6 @@
 
 import Foundation
 
+class Doom {
 
-class Front {
-    var dangers: [Danger] = []
 }
