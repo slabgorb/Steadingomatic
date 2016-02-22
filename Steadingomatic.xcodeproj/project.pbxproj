@@ -19,6 +19,13 @@
 		2467CD2E1C7BCC33001DF3CD /* GodWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD2A1C7BCC33001DF3CD /* GodWords.json */; };
 		2467CD2F1C7BCC33001DF3CD /* CabalWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD2B1C7BCC33001DF3CD /* CabalWords.json */; };
 		2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */; };
+		2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */; };
+		2467CD361C7BCCD9001DF3CD /* ChoirOfAngelsWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */; };
+		2467CD371C7BCCD9001DF3CD /* ForcesOfChaosWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */; };
+		2467CD381C7BCCD9001DF3CD /* ElementalLordWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */; };
+		2467CD3C1C7BCFBA001DF3CD /* SentientArtifactWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */; };
+		2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */; };
+		2467CD3E1C7BCFBA001DF3CD /* MisguidedGoodWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */; };
 		247DAADA1C7A48C10070A7FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DAAD91C7A48C10070A7FC /* String.swift */; };
 		24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8191C779AEF00A2460E /* AppDelegate.swift */; };
 		24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B81B1C779AEF00A2460E /* ViewController.swift */; };
@@ -69,6 +76,13 @@
 		2467CD2A1C7BCC33001DF3CD /* GodWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GodWords.json; sourceTree = "<group>"; };
 		2467CD2B1C7BCC33001DF3CD /* CabalWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CabalWords.json; sourceTree = "<group>"; };
 		2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorruptGovernmentWords.json; sourceTree = "<group>"; };
+		2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ConstructOfLawWords.json; sourceTree = "<group>"; };
+		2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChoirOfAngelsWords.json; sourceTree = "<group>"; };
+		2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ForcesOfChaosWords.json; sourceTree = "<group>"; };
+		2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalLordWords.json; sourceTree = "<group>"; };
+		2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SentientArtifactWords.json; sourceTree = "<group>"; };
+		2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LordOfTheUndeadWords.json; sourceTree = "<group>"; };
+		2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MisguidedGoodWords.json; sourceTree = "<group>"; };
 		247DAAD91C7A48C10070A7FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		24C5B8161C779AEF00A2460E /* Steadingomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadingomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5B8191C779AEF00A2460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,7 +243,14 @@
 		24C5B85B1C77C86000A2460E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */,
+				2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */,
+				2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */,
 				2467CD291C7BCC33001DF3CD /* DemonPrinceWords.json */,
+				2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */,
+				2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */,
+				2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */,
+				2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */,
 				2467CD2A1C7BCC33001DF3CD /* GodWords.json */,
 				2467CD2B1C7BCC33001DF3CD /* CabalWords.json */,
 				2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */,
@@ -354,19 +375,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2467CD381C7BCCD9001DF3CD /* ElementalLordWords.json in Resources */,
 				2467CD2D1C7BCC33001DF3CD /* DemonPrinceWords.json in Resources */,
 				2467CD1B1C7BAAEF001DF3CD /* BaseWords.json in Resources */,
 				24C5B8241C779AEF00A2460E /* LaunchScreen.storyboard in Resources */,
+				2467CD371C7BCCD9001DF3CD /* ForcesOfChaosWords.json in Resources */,
+				2467CD361C7BCCD9001DF3CD /* ChoirOfAngelsWords.json in Resources */,
+				2467CD3E1C7BCFBA001DF3CD /* MisguidedGoodWords.json in Resources */,
 				24C5B84E1C779F2100A2460E /* librebaskerville-regular-webfont.ttf in Resources */,
 				24C5B84D1C779F2100A2460E /* librebaskerville-italic-webfont.ttf in Resources */,
 				2467CD2E1C7BCC33001DF3CD /* GodWords.json in Resources */,
+				2467CD3C1C7BCFBA001DF3CD /* SentientArtifactWords.json in Resources */,
 				24C5B85F1C77C8AA00A2460E /* SteadingWords.json in Resources */,
 				2467CD251C7BC583001DF3CD /* CultWords.json in Resources */,
 				2467CD281C7BCA17001DF3CD /* ReligiousOrganizationWords.json in Resources */,
 				2467CD1D1C7BAF1C001DF3CD /* ThievesGuildWords.json in Resources */,
 				24C5B84C1C779F2100A2460E /* librebaskerville-bold-webfont.ttf in Resources */,
+				2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */,
 				24C5B8211C779AEF00A2460E /* Assets.xcassets in Resources */,
 				2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */,
+				2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */,
 				24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */,
 				2467CD2F1C7BCC33001DF3CD /* CabalWords.json in Resources */,
 			);

@@ -1,0 +1,43 @@
+{
+  "start_noun":[
+    "emperor",
+    "star",
+    "monarch",
+    "star",
+    "sultan",
+    "baron",
+    "caliph",
+    "khan",
+    "magnate",
+    "maharajah",
+    "majesty",
+    "mogul",
+    "overlord",
+    "pasha",
+    "potentate",
+    "prince",
+    "rajah",
+    "rex",
+    "shah",
+    "sovereign",
+    "tycoon",
+    "imperator",
+    "baron",
+    "count",
+    "duke",
+    "earl",
+    "king",
+    "marquis",
+    "monarch",
+    "overlord",
+    "potentate",
+    "prince",
+    "ruler",
+    "sovereign",
+    "viscount"
+  ],
+  "patterns":[
+    "<start_noun> of the <adjective> <noun>",
+    "<prefix>|<start_noun> of the <plural_noun>"
+  ]
+}
