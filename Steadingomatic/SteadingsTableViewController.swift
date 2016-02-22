@@ -11,8 +11,11 @@ import UIKit
 class SteadingsTableViewController: UITableViewController {
 
     let steadingsData = [
-        Steading(name:"SteadyTown", population: .Steady),
-        Steading(name:"ExodusVille", population: .Exodus)
+        Steading(size:.Village),
+        Steading(size:.Town),
+        Steading(size:.City),
+        Steading(size:.Keep),
+        Steading(size:.Village)
         ]
 
     
@@ -49,11 +52,14 @@ class SteadingsTableViewController: UITableViewController {
             
             let steading = steadingsData[indexPath.row] as Steading
             cell.textLabel?.text = steading.name
-            cell.detailTextLabel?.text = steading.population.toString()
+            cell.detailTextLabel?.text = [steading.size.toString(), steading.population.toString(),steading.prosperity.toString(),steading.defenses.toString()].joinWithSeparator(" | ")
             return cell
     }
 
+    @IBOutlet weak var buttonBack: UIBarButtonItem!
 
+    @IBAction func pressButtonBack(sender: UIBarButtonItem) {
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

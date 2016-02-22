@@ -10,6 +10,7 @@ import Foundation
 
 public struct Words {
     var sets:[String: WordSet] = [:]
+    static let shortCutoff = 8
 
     init(sets:[String: WordSet]) {
         self.sets = sets
@@ -17,12 +18,14 @@ public struct Words {
     
     public mutating func add(key: String, set: WordSet) -> Void {
         self.sets[key] = set
+        self.sets["short_\(key)"] = WordSet(values: set.values.filter({$0.characters.count < Words.shortCutoff}))
     }
     
     public mutating func add(key: String, words: [String]) -> Void {
         self.sets[key] = WordSet(values: words)
+        self.sets["short_\(key)"] = WordSet(values: words.filter({$0.characters.count < Words.shortCutoff}))
     }
-    
+
     public func get(key: String) -> [String] {
         if let retVal = self.sets[key]?.values {
             return retVal
@@ -31,11 +34,16 @@ public struct Words {
         }
     }
     
+    public func keys() -> [String] {
+        return self.sets.map({$0.0})
+    }
+    
     public func pick(key: String) -> String {
-        if let set = sets[key] {
+        let cleanedKey = key.removeAll(["<",">"])
+        if let set = self.sets[cleanedKey] {
             return set.pick()
         } else {
-            return ""
+            return "NOT FOUND"
         }
     }
 }
@@ -54,7 +62,7 @@ public struct SubstitutionTemplate {
     var patterns:[String] = []
     var words: Words = Words(sets: [:])
     
-    init(filepath: String) {
+    mutating func read(filepath: String) {
         do {
             if let path = NSBundle.mainBundle().pathForResource(filepath, ofType: "json") {
                 if let jsonData = NSData(contentsOfFile: path) {
@@ -76,11 +84,56 @@ public struct SubstitutionTemplate {
         } catch {
             print("Error deserializing JSON: \(error)")
         }
-     }
-    
-    public func pick() -> String {
-        return self.patterns[Int(arc4random_uniform(UInt32(self.patterns.count)))]
     }
-  
+    
+    init(filepaths: [String]) {
+        read("BaseWords")
+        for filepath in filepaths {
+            read(filepath)
+        }
+    }
+    
+    enum ParserStates: Int {
+        case NotInToken
+        case InToken
+    }
+    public func pick() -> String {
+        let pattern = self.patterns[Int(arc4random_uniform(UInt32(self.patterns.count)))]
+        var result: String = ""
+        var state:ParserStates = .NotInToken
+        print(pattern)
+        var i = pattern.startIndex
+        let end = pattern.endIndex
+        var tokenBuffer: String = ""
+        while i < end {
+            let c = pattern[i]
+            switch state {
+            case .NotInToken:
+                if c == "<" {
+                    state = .InToken
+                    tokenBuffer = "" + String(c)
+                } else if c == "|" {
+                    result = result + ""
+                    
+                } else if c == " " {
+                    result = result + " "
+                }
+            case .InToken:
+                tokenBuffer = tokenBuffer + String(c)
+                if c == ">" {
+                    result = result + self.words.pick(tokenBuffer)
+                    state = .NotInToken
+                }
+                
+            }
+            i = i.successor()
+        }
+    
+        return result.capitalizedString
+
+    }
+    
+    
+    
 }
 

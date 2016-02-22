@@ -37,18 +37,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yy2-gx-G7Q" id="NtB-5q-yvW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qve-9h-kfK">
-                                            <rect key="frame" x="15" y="6" width="31" height="18.5"/>
+                                            <rect key="frame" x="15" y="6" width="31" height="19"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dsF-Hj-jjV">
-                                            <rect key="frame" x="15" y="24.5" width="34.5" height="13"/>
+                                            <rect key="frame" x="15" y="25" width="35" height="13"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,6 +56,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qr4-CR-2ct" kind="presentation" modalPresentationStyle="fullScreen" id="oKh-Zw-kk3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -63,11 +66,32 @@
                             <outlet property="delegate" destination="HXM-hW-R6i" id="ob9-iH-Tlj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dAc-yv-X1a"/>
+                    <navigationItem key="navigationItem" id="AJh-95-ALj">
+                        <barButtonItem key="backBarButtonItem" tag="1" title="Back" id="CC0-ge-321"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWj-IQ-p5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1023.5" y="144.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Luh-sf-UIP">
+            <objects>
+                <viewController id="qr4-CR-2ct" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gX5-dm-zzm"/>
+                        <viewControllerLayoutGuide type="bottom" id="PWw-rR-3lY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgn-R0-yjs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8tG-Ab-ig6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXY-ar-Yj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.5" y="144.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="EpO-XJ-kr0">
@@ -82,18 +106,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XR5-Xs-oMq" id="yOd-Pd-nqa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="itD-AZ-cJt">
-                                            <rect key="frame" x="15" y="6" width="31" height="18.5"/>
+                                            <rect key="frame" x="15" y="6" width="31" height="19"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u1g-Es-wb0">
-                                            <rect key="frame" x="15" y="24.5" width="34.5" height="13"/>
+                                            <rect key="frame" x="15" y="25" width="35" height="13"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -120,7 +144,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ro-X7-xb1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Steadings" id="j2U-Vq-ZuG"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6qk-9k-bKn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back_rounded" id="6qk-9k-bKn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -153,4 +177,7 @@
             <point key="canvasLocation" x="450.5" y="964.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_rounded" width="34" height="34"/>
+    </resources>
 </document>
