@@ -1,0 +1,52 @@
+{
+  "start_noun":[
+    "emperor",
+    "star",
+    "monarch",
+    "sultan",
+    "baron",
+    "caliph",
+    "khan",
+    "magnate",
+    "maharajah",
+    "majesty",
+    "mogul",
+    "overlord",
+    "pasha",
+    "prince",
+    "rajah",
+    "rex",
+    "shah",
+    "sovereign",
+    "tycoon",
+    "imperator",
+    "king",
+    "overlord",
+    "potentate",
+    "prince",
+    "ruler",
+    "sovereign",
+    "god",
+    "deity",
+    "patron"
+  ],
+  "noun":[
+    "hell",
+    "deadland",
+    "afterworld",
+    "inferno",
+    "nightmare",
+    "abyss",
+    "grave",
+    "limbo",
+    "underworld",
+    "pit"
+  ],
+  "patterns":[
+    "<start_noun> of the <adjective> <noun>",
+    "<prefix>-<start_noun> of the <plural_noun>",
+    "<noun> <start_noun>",
+    "<adjective> <start_noun> of the <noun>",
+    "<adjective> <start_noun> of the <plural_noun>"
+  ]
+}
