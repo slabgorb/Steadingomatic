@@ -1,0 +1,37 @@
+{
+  "noun":[
+    "air",
+    "alchemy",
+    "breath",
+    "country",
+    "demesne",
+    "domain",
+    "dominion",
+    "drowning",
+    "dust",
+    "earth",
+    "enchantment",
+    "enclave",
+    "fire",
+    "flame",
+    "inferno",
+    "magnetism",
+    "matter",
+    "power",
+    "realm",
+    "sphere",
+    "stone",
+    "water",
+    "wave",
+    "wind"
+  ],
+  "patterns":[
+    "the <<general_adjective>> <noun> of the <general_adjective> <general_noun>",
+    "<noun> of <general_adjective> <general_noun>",
+    "the <general_adjective> <noun>",
+    "<prefix><general_adjective> <noun>",
+    "<adjective> <noun> of the <general_noun>",
+    "<prefix><general_adjective> <noun> of the <general_noun>",
+    "<general_adjective> <noun> of the <general_noun>"
+  ]
+}

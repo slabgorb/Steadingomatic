@@ -90,6 +90,7 @@ public struct SubstitutionTemplate {
     init(filepaths: [String]) {
         read("BaseWords")
         for filepath in filepaths {
+            print(filepath)
             read(filepath)
         }
     }

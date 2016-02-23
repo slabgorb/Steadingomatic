@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660121C7C849B00F49CE7 /* ElementalVortexWords.json */; };
+		244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660131C7C849B00F49CE7 /* UnholyGroundWords.json */; };
 		2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD161C7BA7F4001DF3CD /* Front.swift */; };
 		2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD181C7BA7FE001DF3CD /* Danger.swift */; };
 		2467CD1B1C7BAAEF001DF3CD /* BaseWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */; };
@@ -21,11 +23,19 @@
 		2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */; };
 		2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */; };
 		2467CD361C7BCCD9001DF3CD /* ChoirOfAngelsWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */; };
-		2467CD371C7BCCD9001DF3CD /* ForcesOfChaosWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */; };
+		2467CD371C7BCCD9001DF3CD /* ForceOfChaosWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD331C7BCCD9001DF3CD /* ForceOfChaosWords.json */; };
 		2467CD381C7BCCD9001DF3CD /* ElementalLordWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */; };
 		2467CD3C1C7BCFBA001DF3CD /* SentientArtifactWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */; };
 		2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */; };
 		2467CD3E1C7BCFBA001DF3CD /* MisguidedGoodWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */; };
+		2467CD411C7BD7A1001DF3CD /* WanderingBarbariansWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD3F1C7BD7A1001DF3CD /* WanderingBarbariansWords.json */; };
+		2467CD421C7BD7A1001DF3CD /* DragonWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD401C7BD7A1001DF3CD /* DragonWords.json */; };
+		2467CD451C7BD86E001DF3CD /* HumanoidVerminWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD431C7BD86E001DF3CD /* HumanoidVerminWords.json */; };
+		2467CD461C7BD86E001DF3CD /* UndergroundDwellersWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD441C7BD86E001DF3CD /* UndergroundDwellersWords.json */; };
+		2467CD491C7BD8FC001DF3CD /* AbandonedTowerWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD471C7BD8FC001DF3CD /* AbandonedTowerWords.json */; };
+		2467CD4A1C7BD8FC001DF3CD /* PlagueOfTheUndeadWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD481C7BD8FC001DF3CD /* PlagueOfTheUndeadWords.json */; };
+		2467CD4C1C7C7F56001DF3CD /* ChosenOneWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD4B1C7C7F56001DF3CD /* ChosenOneWords.json */; };
+		2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */; };
 		247DAADA1C7A48C10070A7FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DAAD91C7A48C10070A7FC /* String.swift */; };
 		24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8191C779AEF00A2460E /* AppDelegate.swift */; };
 		24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B81B1C779AEF00A2460E /* ViewController.swift */; };
@@ -64,6 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		244660121C7C849B00F49CE7 /* ElementalVortexWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalVortexWords.json; sourceTree = "<group>"; };
+		244660131C7C849B00F49CE7 /* UnholyGroundWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnholyGroundWords.json; sourceTree = "<group>"; };
 		2467CD161C7BA7F4001DF3CD /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
 		2467CD181C7BA7FE001DF3CD /* Danger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Danger.swift; sourceTree = "<group>"; };
 		2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BaseWords.json; sourceTree = "<group>"; };
@@ -78,11 +90,19 @@
 		2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorruptGovernmentWords.json; sourceTree = "<group>"; };
 		2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ConstructOfLawWords.json; sourceTree = "<group>"; };
 		2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChoirOfAngelsWords.json; sourceTree = "<group>"; };
-		2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ForcesOfChaosWords.json; sourceTree = "<group>"; };
+		2467CD331C7BCCD9001DF3CD /* ForceOfChaosWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ForceOfChaosWords.json; sourceTree = "<group>"; };
 		2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalLordWords.json; sourceTree = "<group>"; };
 		2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SentientArtifactWords.json; sourceTree = "<group>"; };
 		2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LordOfTheUndeadWords.json; sourceTree = "<group>"; };
 		2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MisguidedGoodWords.json; sourceTree = "<group>"; };
+		2467CD3F1C7BD7A1001DF3CD /* WanderingBarbariansWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WanderingBarbariansWords.json; sourceTree = "<group>"; };
+		2467CD401C7BD7A1001DF3CD /* DragonWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DragonWords.json; sourceTree = "<group>"; };
+		2467CD431C7BD86E001DF3CD /* HumanoidVerminWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HumanoidVerminWords.json; sourceTree = "<group>"; };
+		2467CD441C7BD86E001DF3CD /* UndergroundDwellersWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UndergroundDwellersWords.json; sourceTree = "<group>"; };
+		2467CD471C7BD8FC001DF3CD /* AbandonedTowerWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AbandonedTowerWords.json; sourceTree = "<group>"; };
+		2467CD481C7BD8FC001DF3CD /* PlagueOfTheUndeadWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlagueOfTheUndeadWords.json; sourceTree = "<group>"; };
+		2467CD4B1C7C7F56001DF3CD /* ChosenOneWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChosenOneWords.json; sourceTree = "<group>"; };
+		2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingTableViewCell.swift; sourceTree = "<group>"; };
 		247DAAD91C7A48C10070A7FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		24C5B8161C779AEF00A2460E /* Steadingomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadingomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5B8191C779AEF00A2460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2467CD4F1C7C7FF5001DF3CD /* Steading */ = {
+			isa = PBXGroup;
+			children = (
+				24C5B84F1C77A18D00A2460E /* SteadingsTableViewController.swift */,
+				24E621DF1C7B7EA000E27DE2 /* SteadingViewController.swift */,
+				2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */,
+			);
+			name = Steading;
+			sourceTree = "<group>";
+		};
 		247DAAD81C7A48AB0070A7FC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,9 +243,8 @@
 		24C5B8511C77A1CF00A2460E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2467CD4F1C7C7FF5001DF3CD /* Steading */,
 				24C5B81B1C779AEF00A2460E /* ViewController.swift */,
-				24C5B84F1C77A18D00A2460E /* SteadingsTableViewController.swift */,
-				24E621DF1C7B7EA000E27DE2 /* SteadingViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -243,22 +272,31 @@
 		24C5B85B1C77C86000A2460E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */,
+				244660121C7C849B00F49CE7 /* ElementalVortexWords.json */,
+				244660131C7C849B00F49CE7 /* UnholyGroundWords.json */,
+				2467CD471C7BD8FC001DF3CD /* AbandonedTowerWords.json */,
+				2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */,
+				2467CD2B1C7BCC33001DF3CD /* CabalWords.json */,
+				2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */,
+				2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */,
+				2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */,
+				2467CD241C7BC583001DF3CD /* CultWords.json */,
+				2467CD291C7BCC33001DF3CD /* DemonPrinceWords.json */,
+				2467CD401C7BD7A1001DF3CD /* DragonWords.json */,
+				2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */,
+				2467CD331C7BCCD9001DF3CD /* ForceOfChaosWords.json */,
+				2467CD2A1C7BCC33001DF3CD /* GodWords.json */,
+				2467CD4B1C7C7F56001DF3CD /* ChosenOneWords.json */,
+				2467CD431C7BD86E001DF3CD /* HumanoidVerminWords.json */,
 				2467CD3A1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json */,
 				2467CD3B1C7BCFBA001DF3CD /* MisguidedGoodWords.json */,
-				2467CD291C7BCC33001DF3CD /* DemonPrinceWords.json */,
-				2467CD311C7BCCD9001DF3CD /* ConstructOfLawWords.json */,
-				2467CD321C7BCCD9001DF3CD /* ChoirOfAngelsWords.json */,
-				2467CD331C7BCCD9001DF3CD /* ForcesOfChaosWords.json */,
-				2467CD341C7BCCD9001DF3CD /* ElementalLordWords.json */,
-				2467CD2A1C7BCC33001DF3CD /* GodWords.json */,
-				2467CD2B1C7BCC33001DF3CD /* CabalWords.json */,
-				2467CD2C1C7BCC33001DF3CD /* CorruptGovernmentWords.json */,
-				24C5B85E1C77C8AA00A2460E /* SteadingWords.json */,
-				2467CD1A1C7BAAEF001DF3CD /* BaseWords.json */,
-				2467CD241C7BC583001DF3CD /* CultWords.json */,
-				2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */,
+				2467CD481C7BD8FC001DF3CD /* PlagueOfTheUndeadWords.json */,
 				2467CD271C7BCA17001DF3CD /* ReligiousOrganizationWords.json */,
+				2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */,
+				24C5B85E1C77C8AA00A2460E /* SteadingWords.json */,
+				2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */,
+				2467CD441C7BD86E001DF3CD /* UndergroundDwellersWords.json */,
+				2467CD3F1C7BD7A1001DF3CD /* WanderingBarbariansWords.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -376,12 +414,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2467CD381C7BCCD9001DF3CD /* ElementalLordWords.json in Resources */,
+				244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */,
+				2467CD451C7BD86E001DF3CD /* HumanoidVerminWords.json in Resources */,
 				2467CD2D1C7BCC33001DF3CD /* DemonPrinceWords.json in Resources */,
+				2467CD421C7BD7A1001DF3CD /* DragonWords.json in Resources */,
+				2467CD411C7BD7A1001DF3CD /* WanderingBarbariansWords.json in Resources */,
+				244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */,
 				2467CD1B1C7BAAEF001DF3CD /* BaseWords.json in Resources */,
 				24C5B8241C779AEF00A2460E /* LaunchScreen.storyboard in Resources */,
-				2467CD371C7BCCD9001DF3CD /* ForcesOfChaosWords.json in Resources */,
+				2467CD371C7BCCD9001DF3CD /* ForceOfChaosWords.json in Resources */,
+				2467CD491C7BD8FC001DF3CD /* AbandonedTowerWords.json in Resources */,
 				2467CD361C7BCCD9001DF3CD /* ChoirOfAngelsWords.json in Resources */,
 				2467CD3E1C7BCFBA001DF3CD /* MisguidedGoodWords.json in Resources */,
+				2467CD4A1C7BD8FC001DF3CD /* PlagueOfTheUndeadWords.json in Resources */,
 				24C5B84E1C779F2100A2460E /* librebaskerville-regular-webfont.ttf in Resources */,
 				24C5B84D1C779F2100A2460E /* librebaskerville-italic-webfont.ttf in Resources */,
 				2467CD2E1C7BCC33001DF3CD /* GodWords.json in Resources */,
@@ -391,12 +436,14 @@
 				2467CD281C7BCA17001DF3CD /* ReligiousOrganizationWords.json in Resources */,
 				2467CD1D1C7BAF1C001DF3CD /* ThievesGuildWords.json in Resources */,
 				24C5B84C1C779F2100A2460E /* librebaskerville-bold-webfont.ttf in Resources */,
+				2467CD461C7BD86E001DF3CD /* UndergroundDwellersWords.json in Resources */,
 				2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */,
 				24C5B8211C779AEF00A2460E /* Assets.xcassets in Resources */,
 				2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */,
 				2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */,
 				24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */,
 				2467CD2F1C7BCC33001DF3CD /* CabalWords.json in Resources */,
+				2467CD4C1C7C7F56001DF3CD /* ChosenOneWords.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +472,7 @@
 				2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */,
 				2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */,
 				24C5B8551C77A24200A2460E /* Steading.swift in Sources */,
+				2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */,
 				2467CD211C7BC023001DF3CD /* Doom.swift in Sources */,
 				24C5B8571C77A79D00A2460E /* SubstitutionTemplate.swift in Sources */,
 				24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */,

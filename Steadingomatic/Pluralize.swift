@@ -198,7 +198,7 @@ extension String {
         if count == 1 {
             return self
         } else {
-            if with.length != 0 {
+            if with.characters.count == 0 {
                 return with
             } else {
                 return Pluralize.apply(self)

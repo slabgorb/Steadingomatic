@@ -1,0 +1,33 @@
+{               "noun":[
+                     "abbey",
+                     "apex",
+                     "church",
+                     "belfry",
+                     "castle",
+                     "citadel",
+                     "column",
+                     "fort",
+                     "fortification",
+                     "fortress",
+                     "keep",
+                     "lookout",
+                     "mast",
+                     "minaret",
+                     "monolith",
+                     "obelisk",
+                     "pillar",
+                     "refuge",
+                     "spire",
+                     "steeple",
+                     "stronghold",
+                     "turret"
+                  ],
+                  "patterns":[
+                     "the <noun> of the <general_adjective> <general_noun>",
+                     "<noun> of <general_adjective> <general_noun>",
+                     "the <general_adjective> <noun>",
+                     "<noun> of the <general_noun>",
+                     "<prefix>-<noun> of the <general_noun>",
+                     "<general_adjective> <noun> of the <plural_noun>"
+                  ]
+}
