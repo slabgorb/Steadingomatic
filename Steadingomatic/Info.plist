@@ -41,6 +41,7 @@
 		<string>librebaskerville-regular-webfont.ttf</string>
 		<string>librebaskerville-bold-webfont.ttf</string>
 		<string>librebaskerville-italic-webfont.ttf</string>
+		<string>steadingomatic.ttf</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>

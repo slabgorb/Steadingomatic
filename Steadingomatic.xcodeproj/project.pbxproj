@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240726381C7CF6220011882E /* steadingomatic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 240726371C7CF6220011882E /* steadingomatic.ttf */; };
 		244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660121C7C849B00F49CE7 /* ElementalVortexWords.json */; };
 		244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660131C7C849B00F49CE7 /* UnholyGroundWords.json */; };
 		2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD161C7BA7F4001DF3CD /* Front.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240726371C7CF6220011882E /* steadingomatic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = steadingomatic.ttf; sourceTree = "<group>"; };
 		244660121C7C849B00F49CE7 /* ElementalVortexWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalVortexWords.json; sourceTree = "<group>"; };
 		244660131C7C849B00F49CE7 /* UnholyGroundWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnholyGroundWords.json; sourceTree = "<group>"; };
 		2467CD161C7BA7F4001DF3CD /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
@@ -152,6 +154,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240726361C7CCB4A0011882E /* Front */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Front;
+			sourceTree = "<group>";
+		};
 		2467CD4F1C7C7FF5001DF3CD /* Steading */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,11 +203,11 @@
 		24C5B8181C779AEF00A2460E /* Steadingomatic */ = {
 			isa = PBXGroup;
 			children = (
-				24E621E11C7B7FEB00E27DE2 /* Views */,
 				247DAAD81C7A48AB0070A7FC /* Helpers */,
 				24C5B85B1C77C86000A2460E /* Data */,
 				24C5B8531C77A23100A2460E /* Models */,
 				24C5B8521C77A1DD00A2460E /* Storyboards */,
+				24E621E11C7B7FEB00E27DE2 /* Views */,
 				24C5B8511C77A1CF00A2460E /* ViewControllers */,
 				24C5B8481C779EE500A2460E /* Resources */,
 				24C5B8191C779AEF00A2460E /* AppDelegate.swift */,
@@ -230,6 +239,7 @@
 		24C5B8481C779EE500A2460E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				240726371C7CF6220011882E /* steadingomatic.ttf */,
 				24C5B8491C779F2100A2460E /* librebaskerville-bold-webfont.ttf */,
 				24C5B84A1C779F2100A2460E /* librebaskerville-italic-webfont.ttf */,
 				24C5B84B1C779F2100A2460E /* librebaskerville-regular-webfont.ttf */,
@@ -240,6 +250,7 @@
 		24C5B8511C77A1CF00A2460E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				240726361C7CCB4A0011882E /* Front */,
 				2467CD4F1C7C7FF5001DF3CD /* Steading */,
 				24C5B81B1C779AEF00A2460E /* ViewController.swift */,
 			);
@@ -436,6 +447,7 @@
 				2467CD461C7BD86E001DF3CD /* UndergroundDwellersWords.json in Resources */,
 				2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */,
 				24C5B8211C779AEF00A2460E /* Assets.xcassets in Resources */,
+				240726381C7CF6220011882E /* steadingomatic.ttf in Resources */,
 				2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */,
 				2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */,
 				24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */,

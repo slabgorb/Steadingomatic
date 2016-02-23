@@ -11,4 +11,6 @@ import Foundation
 
 class Front {
     var dangers: [Danger] = []
+    var dooms: [Doom] = []
+    
 }

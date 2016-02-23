@@ -9,9 +9,11 @@
 import UIKit
 
 class SteadingViewController: UIViewController {
+    var steading: Steading?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSteadingDetail.labelSteadingName.text = steading?.name
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +23,7 @@ class SteadingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet var viewSteadingDetail: SteadingDetailView!
 
     /*
     // MARK: - Navigation

@@ -20,8 +20,7 @@ class SteadingDetailView: UIView {
     */
     // MARK: Properties
 
-    @IBOutlet weak var lblSteadingName: UILabel!
-    @IBOutlet weak var btnClose: UIButton!
+    @IBOutlet weak var labelSteadingName: UILabel!
     
     
 }

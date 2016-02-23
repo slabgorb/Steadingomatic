@@ -10,6 +10,8 @@ import UIKit
 
 class SteadingTableViewCell: UITableViewCell {
 
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +23,12 @@ class SteadingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBOutlet weak var labelSteadingName: UILabel!
+    // MARK: Properties
+
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelPopulation: UILabel!
+    @IBOutlet weak var labelDefenses: UILabel!
+    @IBOutlet weak var labelProsperity: UILabel!
+    @IBOutlet weak var labelType: UILabel!
+
 }
