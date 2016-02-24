@@ -168,7 +168,7 @@ enum Icon: String {
             "\u{f014}","\u{f015}","\u{f016}","\u{f017}","\u{f022}","\u{f020}","\u{f027}","\u{f018}","\u{f019}",
             "\u{f01a}","\u{f01b}","\u{f01c}","\u{f01d}","\u{f01e}","\u{f021}"]
     }
-    static func random() -> Icon {
+    static func pick() -> Icon {
         // pick and return a new value
         let rand = arc4random_uniform(UInt32(Icon.allValues().count))
         return Icon(rawValue: Icon.allValues()[Int(rand)])!

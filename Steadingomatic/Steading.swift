@@ -16,6 +16,7 @@ protocol Describable {
 
 
 struct Steading {
+    // MARK: Size
     
     enum Size:UInt32, Describable {
         case Village
@@ -40,6 +41,8 @@ struct Steading {
         }
         
     }
+    
+    // MARK: Population
     
     enum Population:UInt32, Describable {
         case Exodus
@@ -78,6 +81,8 @@ struct Steading {
         }
     }
     
+    // MARK: Prosperity
+    
     enum Prosperity:UInt32 {
         case Dirt
         case Poor
@@ -115,6 +120,8 @@ struct Steading {
         }
     }
     
+    // MARK: Defenses
+    
     enum Defenses: UInt32 {
         case None
         case Militia
@@ -147,14 +154,17 @@ struct Steading {
         }
     }
     
-    
+    // MARK: Properties
     var name: String?
     var size: Size
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
     let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
+    var icon: Icon = .Acorn
     
+    
+    // MARK: Methods
     func defaults() -> (Prosperity, Population, Defenses) {
         switch self.size {
         case .Village:
@@ -171,6 +181,7 @@ struct Steading {
     init(size:Size) {
         self.name = nameTemplate.pick()
         self.size = size
+        self.icon = Icon.pick()
         (self.prosperity, self.population, self.defenses) = defaults()
     }
 }

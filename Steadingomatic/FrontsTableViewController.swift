@@ -1,5 +1,5 @@
 //
-//  SteadingsTableViewController.swift
+//  FrontsTableViewController
 //  Steadingomatic
 //
 //  Created by Keith Avery on 2/19/16.
@@ -8,39 +8,13 @@
 
 import UIKit
 
-class SteadingsTableViewController: UITableViewController {
+class FrontsTableViewController: UITableViewController {
 
-    var steadingsData = [
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
-        Steading(size:.Village),
-        Steading(size:.Town),
-        Steading(size:.City),
-        Steading(size:.Keep),
-        Steading(size:.Village),
+    var frontsData = [
+        Front(),
+        Front(),
+        Front(),
+        Front()
     ]
 
     var steadingToPass: Steading?
@@ -63,19 +37,14 @@ class SteadingsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return steadingsData.count
+        return frontsData.count
         
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("SteadingCell", forIndexPath: indexPath) as! SteadingTableViewCell
-            let steading = steadingsData[indexPath.row] as Steading
-            cell.labelName.text = steading.name
-            cell.labelPopulation.text = steading.population.toString()
-            cell.labelDefenses.text = steading.defenses.toString()
-            cell.labelProsperity.text = steading.prosperity.toString()
-            cell.labelType.text = steading.size.toString()
-            cell.labelIcon.text = steading.icon.rawValue
+            let cell = tableView.dequeueReusableCellWithIdentifier("FrontCell", forIndexPath: indexPath) as! FrontTableViewCell
+            let front = frontsData[indexPath.row] as Front
+            cell.labelName.text = front.name
             
             return cell
     }

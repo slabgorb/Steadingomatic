@@ -90,7 +90,6 @@ public struct SubstitutionTemplate {
     init(filepaths: [String]) {
         read("BaseWords")
         for filepath in filepaths {
-            print(filepath)
             read(filepath)
         }
     }
@@ -103,7 +102,6 @@ public struct SubstitutionTemplate {
         let pattern = self.patterns[Int(arc4random_uniform(UInt32(self.patterns.count)))]
         var result: String = ""
         var state:ParserStates = .NotInToken
-        print(pattern)
         var i = pattern.startIndex
         let end = pattern.endIndex
         var tokenBuffer: String = ""

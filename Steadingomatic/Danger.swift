@@ -15,7 +15,7 @@ class Danger {
         case ArcaneEnemies
         case Hordes
         case CursedPlaces
-        
+    
         func toString() -> String {
             switch self {
             case .AmbitiousOrganizations: return "Ambitious Organizations"
@@ -24,6 +24,23 @@ class Danger {
             case .Hordes: return "Hordes"
             case .CursedPlaces: return "Cursed Places"
             }
+        }
+        private static let _count: DangerType.RawValue = {
+            // find the maximum enum value
+            var maxValue: UInt32 = 0
+            while let _ = DangerType(rawValue: ++maxValue) { }
+            return maxValue
+        }()
+        static func random() -> DangerType {
+            // pick and return a new value
+            let rand = arc4random_uniform(_count)
+            return DangerType(rawValue: rand)!
+        }
+        
+        func randomSubType() -> DangerSubType {
+            let subTypeList = self.subtypes()
+            let randomIndex = Int(arc4random_uniform(UInt32(subTypeList.count)))
+            return subTypeList[randomIndex]
         }
         
         func subtypes() -> [DangerSubType] {
@@ -253,15 +270,17 @@ class Danger {
         }
     }
     
-    var type: DangerType
-    var subtype: DangerSubType
+    var type: DangerType?
+    var subtype: DangerSubType?
     var nameTemplate: SubstitutionTemplate
     var name: String = ""
-    
+    var icon: Icon = Icon.Acorn
+  
     init() {
-        self.type = .AmbitiousOrganizations
-        self.subtype = .ThievesGuild
-        self.nameTemplate = SubstitutionTemplate(filepaths: [self.subtype.wordFile()])
+        self.type = DangerType.random()
+        self.subtype = self.type!.randomSubType()
+        self.nameTemplate = SubstitutionTemplate(filepaths: [self.subtype!.wordFile()])
         self.name = self.nameTemplate.pick()
+        self.icon = Icon.pick()
     }
 }

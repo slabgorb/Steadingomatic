@@ -33,9 +33,11 @@ class SteadingomaticTests: XCTestCase {
     }
 
     func testSubstitutionTemplate() {
-        let subTemplate = SubstitutionTemplate(filepath: "SteadingWords")
+        let subTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
         XCTAssert(subTemplate.patterns.count > 1)
         XCTAssert(subTemplate.words.sets.count > 1)
     }
+    
+    
     
 }

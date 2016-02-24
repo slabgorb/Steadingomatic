@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		240726381C7CF6220011882E /* steadingomatic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 240726371C7CF6220011882E /* steadingomatic.ttf */; };
 		2407263A1C7CF6A30011882E /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240726391C7CF6A30011882E /* Icon.swift */; };
+		2407263C1C7E03900011882E /* FrontsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407263B1C7E03900011882E /* FrontsTableViewController.swift */; };
+		2407263E1C7E06630011882E /* FrontTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407263D1C7E06630011882E /* FrontTableViewCell.swift */; };
+		240726401C7E07560011882E /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407263F1C7E07560011882E /* FrontViewController.swift */; };
+		240726451C7E360F0011882E /* FrontWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 240726441C7E360F0011882E /* FrontWords.json */; };
 		244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660121C7C849B00F49CE7 /* ElementalVortexWords.json */; };
 		244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660131C7C849B00F49CE7 /* UnholyGroundWords.json */; };
 		2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD161C7BA7F4001DF3CD /* Front.swift */; };
@@ -77,6 +81,10 @@
 /* Begin PBXFileReference section */
 		240726371C7CF6220011882E /* steadingomatic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = steadingomatic.ttf; sourceTree = "<group>"; };
 		240726391C7CF6A30011882E /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		2407263B1C7E03900011882E /* FrontsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontsTableViewController.swift; sourceTree = "<group>"; };
+		2407263D1C7E06630011882E /* FrontTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontTableViewCell.swift; sourceTree = "<group>"; };
+		2407263F1C7E07560011882E /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		240726441C7E360F0011882E /* FrontWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FrontWords.json; sourceTree = "<group>"; };
 		244660121C7C849B00F49CE7 /* ElementalVortexWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalVortexWords.json; sourceTree = "<group>"; };
 		244660131C7C849B00F49CE7 /* UnholyGroundWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnholyGroundWords.json; sourceTree = "<group>"; };
 		2467CD161C7BA7F4001DF3CD /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
@@ -159,6 +167,9 @@
 		240726361C7CCB4A0011882E /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				2407263F1C7E07560011882E /* FrontViewController.swift */,
+				2407263D1C7E06630011882E /* FrontTableViewCell.swift */,
+				2407263B1C7E03900011882E /* FrontsTableViewController.swift */,
 			);
 			name = Front;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 				2467CD271C7BCA17001DF3CD /* ReligiousOrganizationWords.json */,
 				2467CD391C7BCFBA001DF3CD /* SentientArtifactWords.json */,
 				24C5B85E1C77C8AA00A2460E /* SteadingWords.json */,
+				240726441C7E360F0011882E /* FrontWords.json */,
 				2467CD1C1C7BAF1C001DF3CD /* ThievesGuildWords.json */,
 				2467CD441C7BD86E001DF3CD /* UndergroundDwellersWords.json */,
 				2467CD3F1C7BD7A1001DF3CD /* WanderingBarbariansWords.json */,
@@ -427,6 +439,7 @@
 				2467CD381C7BCCD9001DF3CD /* ElementalLordWords.json in Resources */,
 				244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */,
 				2467CD451C7BD86E001DF3CD /* HumanoidVerminWords.json in Resources */,
+				240726451C7E360F0011882E /* FrontWords.json in Resources */,
 				2467CD2D1C7BCC33001DF3CD /* DemonPrinceWords.json in Resources */,
 				2467CD421C7BD7A1001DF3CD /* DragonWords.json in Resources */,
 				2467CD411C7BD7A1001DF3CD /* WanderingBarbariansWords.json in Resources */,
@@ -484,8 +497,10 @@
 				2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */,
 				2407263A1C7CF6A30011882E /* Icon.swift in Sources */,
 				2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */,
+				2407263C1C7E03900011882E /* FrontsTableViewController.swift in Sources */,
 				24C5B8551C77A24200A2460E /* Steading.swift in Sources */,
 				2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */,
+				240726401C7E07560011882E /* FrontViewController.swift in Sources */,
 				2467CD211C7BC023001DF3CD /* Doom.swift in Sources */,
 				24C5B8571C77A79D00A2460E /* SubstitutionTemplate.swift in Sources */,
 				24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */,
@@ -494,6 +509,7 @@
 				24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */,
 				24E621E31C7B800800E27DE2 /* SteadingDetailView.swift in Sources */,
 				2467CD231C7BC43D001DF3CD /* Pluralize.swift in Sources */,
+				2407263E1C7E06630011882E /* FrontTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

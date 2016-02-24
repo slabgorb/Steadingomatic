@@ -1,0 +1,15 @@
+{
+   "patterns":[
+               "the <plural_noun> of the <adjective> <noun>",
+               "the <plural_noun>",
+               "the <adjective> <plural_noun>",
+               "<noun> of the <noun>",
+               "<prefix>-<noun> of the <plural_noun>",
+               "<prefix>|<noun>",
+               "<start_noun> of the <plural_noun>",
+               "<plural_noun> of the <noun>",
+               "<adjective>|<noun>",
+   ]
+
+   
+}

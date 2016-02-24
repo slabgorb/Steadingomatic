@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="steadingomatic.ttf">
+            <string>townomatic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="zMx-Ln-grO">
@@ -47,8 +52,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdo-Jv-AqY">
-                                            <rect key="frame" x="63" y="11" width="304" height="21"/>
+                                            <rect key="frame" x="101" y="11" width="266" height="21"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Population" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-zS-xwH">
+                                            <rect key="frame" x="192" y="26" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -64,9 +75,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Population" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-zS-xwH">
-                                            <rect key="frame" x="192" y="26" width="53" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-2X-ipC">
+                                            <rect key="frame" x="55" y="7" width="33" height="29"/>
+                                            <fontDescription key="fontDescription" name="townomatic" family="townomatic" pointSize="24"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -74,6 +85,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelDefenses" destination="MKB-MQ-0iN" id="t55-Qq-6bl"/>
+                                    <outlet property="labelIcon" destination="cAk-2X-ipC" id="vLP-I7-I9B"/>
                                     <outlet property="labelName" destination="vdo-Jv-AqY" id="Tmi-Gx-rF9"/>
                                     <outlet property="labelPopulation" destination="AO2-zS-xwH" id="7Ie-jh-Xeq"/>
                                     <outlet property="labelProsperity" destination="EuP-6Z-5nL" id="u2d-c3-3OP"/>
@@ -86,15 +98,7 @@
                             <outlet property="delegate" destination="HXM-hW-R6i" id="ob9-iH-Tlj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AJh-95-ALj">
-                        <barButtonItem key="backBarButtonItem" tag="1" title="Back" id="CC0-ge-321"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="XJP-Qv-NJ8">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="AzW-hq-Zsf">
-                                <rect key="frame" x="337" y="11" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="AJh-95-ALj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWj-IQ-p5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,29 +113,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontCell" textLabel="itD-AZ-cJt" detailTextLabel="u1g-Es-wb0" style="IBUITableViewCellStyleSubtitle" id="XR5-Xs-oMq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontCell" id="XR5-Xs-oMq" customClass="FrontTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XR5-Xs-oMq" id="yOd-Pd-nqa">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="itD-AZ-cJt">
-                                            <rect key="frame" x="15" y="6" width="31" height="19"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u1g-Es-wb0">
-                                            <rect key="frame" x="15" y="25" width="35" height="13"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="11"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-mx-VJt">
+                                            <rect key="frame" x="23" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelName" destination="uXr-mx-VJt" id="h0a-83-IrC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
