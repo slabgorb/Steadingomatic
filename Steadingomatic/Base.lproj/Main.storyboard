@@ -85,7 +85,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelDefenses" destination="MKB-MQ-0iN" id="t55-Qq-6bl"/>
-                                    <outlet property="labelIcon" destination="cAk-2X-ipC" id="vLP-I7-I9B"/>
+                                    <outlet property="labelIcon" destination="cAk-2X-ipC" id="jfa-tm-rki"/>
                                     <outlet property="labelName" destination="vdo-Jv-AqY" id="Tmi-Gx-rF9"/>
                                     <outlet property="labelPopulation" destination="AO2-zS-xwH" id="7Ie-jh-Xeq"/>
                                     <outlet property="labelProsperity" destination="EuP-6Z-5nL" id="u2d-c3-3OP"/>

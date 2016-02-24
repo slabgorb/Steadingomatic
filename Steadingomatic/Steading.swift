@@ -160,7 +160,7 @@ struct Steading {
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
-    let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
+    static let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
     var icon: Icon = .Acorn
     
     
@@ -179,7 +179,7 @@ struct Steading {
     }
     
     init(size:Size) {
-        self.name = nameTemplate.pick()
+        self.name = Steading.nameTemplate.pick()
         self.size = size
         self.icon = Icon.pick()
         (self.prosperity, self.population, self.defenses) = defaults()

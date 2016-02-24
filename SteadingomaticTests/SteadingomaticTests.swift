@@ -38,6 +38,11 @@ class SteadingomaticTests: XCTestCase {
         XCTAssert(subTemplate.words.sets.count > 1)
     }
     
+    func testCreateFront() {
+        let front = Front()
+        print(front.name)
+        XCTAssert(front.name.characters.count > 0)
+    }
     
     
 }

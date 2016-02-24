@@ -18,11 +18,12 @@ class Front {
     var description: String = ""
     var cast: [String] = []
     var name: String = ""
-    let nameTemplate = SubstitutionTemplate(filepaths: ["FrontWords"])
+    static let nameTemplate = SubstitutionTemplate(filepaths: ["FrontWords"])
     init() {
-        for _ in 1...arc4random_uniform(maxDangers) {
+        for _ in 1...arc4random_uniform(4) {
             self.dangers.append(Danger())
         }
+        self.name = Front.nameTemplate.pick()
         
     }
 }

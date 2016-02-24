@@ -97,9 +97,9 @@
     "zealot"
   ],
   "patterns":[
-    "the <plural_noun> of the <general_adjective> <noun>",
+    "the <plural_noun> of the <adjective> <noun>",
     "the <plural_noun>",
-    "the <general_adjective> <plural_noun>",
+    "the <adjective> <plural_noun>",
     "<noun> of the <noun>",
     "<prefix><noun> of the <plural_noun>",
     "<noun> of the <plural_noun>",

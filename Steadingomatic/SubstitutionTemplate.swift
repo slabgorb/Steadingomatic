@@ -76,9 +76,10 @@ public struct SubstitutionTemplate {
                             for set in ws {
                                 self.words.add(set.0, words: set.1)
                             }
-                        } else {
-                            print("WS not a dict?")
                         }
+                    }
+                    else {
+                        print("Could not load the JSON for \(filepath) \(path)")
                     }
                 }
             }
@@ -100,6 +101,7 @@ public struct SubstitutionTemplate {
     }
     public func pick() -> String {
         let pattern = self.patterns[Int(arc4random_uniform(UInt32(self.patterns.count)))]
+        print(pattern)
         var result: String = ""
         var state:ParserStates = .NotInToken
         var i = pattern.startIndex
@@ -114,13 +116,14 @@ public struct SubstitutionTemplate {
                     tokenBuffer = "" + String(c)
                 } else if c == "|" {
                     result = result + ""
-                    
-                } else if c == " " {
-                    result = result + " "
+
+                } else {
+                    result = result + String(c)
                 }
             case .InToken:
                 tokenBuffer = tokenBuffer + String(c)
                 if c == ">" {
+                    print(tokenBuffer)
                     result = result + self.words.pick(tokenBuffer)
                     state = .NotInToken
                 }

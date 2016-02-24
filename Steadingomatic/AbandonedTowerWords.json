@@ -1,4 +1,4 @@
-{               "noun":[
+{               "start_noun":[
                      "abbey",
                      "apex",
                      "church",
@@ -23,11 +23,11 @@
                      "turret"
                   ],
                   "patterns":[
-                     "the <noun> of the <general_adjective> <general_noun>",
-                     "<noun> of <general_adjective> <general_noun>",
-                     "the <general_adjective> <noun>",
-                     "<noun> of the <general_noun>",
-                     "<prefix>-<noun> of the <general_noun>",
-                     "<general_adjective> <noun> of the <plural_noun>"
+                     "the <start_noun> of the <adjective> <gnoun>",
+                     "<start_noun> of <adjective> <noun>",
+                     "the <adjective> <start_noun>",
+                     "<start_noun> of the <noun>",
+                     "<prefix>-<start_noun> of the <noun>",
+                     "<adjective> <start_noun> of the <plural_noun>"
                   ]
 }

@@ -30,5 +30,6 @@ class SteadingTableViewCell: UITableViewCell {
     @IBOutlet weak var labelDefenses: UILabel!
     @IBOutlet weak var labelProsperity: UILabel!
     @IBOutlet weak var labelType: UILabel!
+    @IBOutlet weak var labelIcon: UILabel!
 
 }

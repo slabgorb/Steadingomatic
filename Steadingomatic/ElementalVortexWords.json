@@ -1,5 +1,5 @@
 {
-  "noun":[
+  "start_noun":[
     "air",
     "alchemy",
     "breath",
@@ -26,12 +26,12 @@
     "wind"
   ],
   "patterns":[
-    "the <<general_adjective>> <noun> of the <general_adjective> <general_noun>",
-    "<noun> of <general_adjective> <general_noun>",
-    "the <general_adjective> <noun>",
-    "<prefix><general_adjective> <noun>",
-    "<adjective> <noun> of the <general_noun>",
-    "<prefix><general_adjective> <noun> of the <general_noun>",
-    "<general_adjective> <noun> of the <general_noun>"
+    "the <adjective> <start_noun> of the <adjective> <noun>",
+    "<noun> of <adjective> <start_noun>",
+    "the <adjective> <start_noun>",
+    "<prefix><adjective> <noun>",
+    "<adjective> <start_noun> of the <noun>",
+    "<prefix><adjective> <start_noun> of the <noun>",
+    "<adjective> <start_noun> of the <noun>"
   ]
 }
