@@ -23,11 +23,58 @@
                     <connections>
                         <segue destination="4ro-X7-xb1" kind="relationship" relationship="viewControllers" id="2mz-Aq-8oO"/>
                         <segue destination="Wp6-R6-ftX" kind="relationship" relationship="viewControllers" id="JMJ-5Z-uVk"/>
+                        <segue destination="AOF-Wu-nuq" kind="relationship" relationship="viewControllers" id="vLH-vz-n0k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfC-mt-UHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-61" y="145"/>
+            <point key="canvasLocation" x="-353.5" y="134.5"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="L4F-qu-rau">
+            <objects>
+                <tableViewController id="kp6-dm-hwc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tis-yo-6oW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aZm-Yx-ZD0">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZm-Yx-ZD0" id="RHE-K9-sbm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kp6-dm-hwc" id="q4f-MK-a8w"/>
+                            <outlet property="delegate" destination="kp6-dm-hwc" id="FxK-oo-ec0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="zbf-yT-5Mn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBT-fK-Fd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="-743"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Dwy-HX-yPS">
+            <objects>
+                <navigationController id="AOF-Wu-nuq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="bat" id="adb-bz-f2L"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMf-mx-2uC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kp6-dm-hwc" kind="relationship" relationship="rootViewController" id="RHi-l7-vte"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbg-ge-kT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.5" y="-751.5"/>
         </scene>
         <!--Steadings Table View Controller-->
         <scene sceneID="GTF-19-IHt">
@@ -108,16 +155,16 @@
         <scene sceneID="EpO-XJ-kr0">
             <objects>
                 <tableViewController id="hRz-9O-P6R" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sSl-fc-HVm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" id="sSl-fc-HVm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontCell" id="XR5-Xs-oMq" customClass="FrontTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontCell" rowHeight="52" id="XR5-Xs-oMq" customClass="FrontTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XR5-Xs-oMq" id="yOd-Pd-nqa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-mx-VJt">
@@ -148,7 +195,7 @@
         <scene sceneID="bCD-EE-3Nk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ro-X7-xb1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Steadings" id="j2U-Vq-ZuG"/>
+                    <tabBarItem key="tabBarItem" title="Steadings" image="tower" id="j2U-Vq-ZuG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back_rounded" id="6qk-9k-bKn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -167,7 +214,7 @@
         <scene sceneID="HeD-D3-Wjr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wp6-R6-ftX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fronts" id="ZER-jo-ipK"/>
+                    <tabBarItem key="tabBarItem" title="Fronts" image="ship-under-sail" id="ZER-jo-ipK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zy-dD-5Hc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -184,6 +231,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back_rounded" width="34" height="34"/>
+        <image name="back_rounded" width="19" height="22"/>
+        <image name="bat" width="30" height="30"/>
+        <image name="ship-under-sail" width="30" height="30"/>
+        <image name="tower" width="30" height="30"/>
     </resources>
 </document>
