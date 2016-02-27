@@ -25,6 +25,7 @@ class FrontTableViewCell: UITableViewCell {
 
     // MARK: Properties
 
+    @IBOutlet weak var tableDangers: UITableView!
     @IBOutlet weak var labelName: UILabel!
 
 

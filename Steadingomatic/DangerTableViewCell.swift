@@ -25,8 +25,10 @@ class DangerTableViewCell: UITableViewCell {
 
     // MARK: Properties
 
-    @IBOutlet weak var tableDangers: UITableView!
+
     @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelType: UILabel!
+    @IBOutlet weak var labelSubType: UILabel!
 
 
 }

@@ -10,6 +10,7 @@ import Foundation
 
 
 class Front {
+    static let nameTemplate = SubstitutionTemplate(filepaths: ["FrontWords"])
     let maxDangers:UInt32 = 4
     var dangers: [Danger] = []
     var dooms: [Doom] = []
@@ -17,13 +18,17 @@ class Front {
     var grimPortents: [String] = []
     var description: String = ""
     var cast: [String] = []
-    var name: String = ""
-    static let nameTemplate = SubstitutionTemplate(filepaths: ["FrontWords"])
+    var name: String = {
+        Front.nameTemplate.pick()
+    }()
     init() {
         for _ in 1...arc4random_uniform(4) {
             self.dangers.append(Danger())
         }
-        self.name = Front.nameTemplate.pick()
-        
+
+    }
+    convenience init(name:String) {
+        self.init()
+        self.name = name
     }
 }

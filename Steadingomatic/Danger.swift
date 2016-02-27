@@ -275,7 +275,8 @@ class Danger {
     var nameTemplate: SubstitutionTemplate
     var name: String = ""
     var icon: Icon = Icon.Acorn
-  
+    var description: String?
+    
     init() {
         self.type = DangerType.random()
         self.subtype = self.type!.randomSubType()

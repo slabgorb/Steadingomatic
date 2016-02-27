@@ -8,6 +8,7 @@
 
 import Foundation
 
-class Doom {
-
+struct Doom {
+    var description: String?
+    
 }

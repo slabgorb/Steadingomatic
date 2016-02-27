@@ -45,27 +45,46 @@ struct Steading {
     // MARK: Population
     
     enum Population:UInt32, Describable {
+        case Lower
         case Exodus
         case Shrinking
         case Steady
         case Growing
         case Booming
+        case Raise
         func toString() -> String {
             switch self {
+            case .Lower: return "Ghost Town"
             case .Exodus: return "Exodus"
             case .Shrinking: return "Shrinking"
             case .Steady: return "Steady"
             case .Growing: return "Growing"
             case .Booming: return "Booming"
+            case .Raise: return "Raise"
             }
         }
+        
+        mutating func up() -> Void  {
+            switch self {
+            case .Lower: self = .Exodus
+            case .Exodus: self = .Shrinking
+            case .Shrinking: self = .Steady
+            case .Steady: self = .Growing
+            case .Growing: self = .Booming
+            case .Booming: self = .Raise
+            case .Raise: self = .Raise
+            }
+        }
+        
         func description() -> String {
             switch self {
+            case .Lower: return "The steading will decrease its size"
             case .Exodus: return "The steading has lost its population and is on the verge of collapse."
             case .Shrinking: return "The population is less than it once was. Buildings stand empty."
             case .Steady: return "The population is in line with the current size of the steading. Some slow growth."
             case .Growing: return "More people than there are buildings."
             case .Booming: return "Resources are stretched thin trying to keep up with the number of people."
+            case .Raise: return "This steading will increase its size."
             }
         }
         private static let _count: Population.RawValue = {
@@ -155,13 +174,19 @@ struct Steading {
     }
     
     // MARK: Properties
-    var name: String?
+    
+    static let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
+    
+    var name: String = {
+        Steading.nameTemplate.pick()
+    }()
     var size: Size
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
-    static let nameTemplate = SubstitutionTemplate(filepaths: ["SteadingWords"])
-    var icon: Icon = .Acorn
+    var icon: Icon = {
+        Icon.pick()
+    }()
     
     
     // MARK: Methods
@@ -179,9 +204,11 @@ struct Steading {
     }
     
     init(size:Size) {
-        self.name = Steading.nameTemplate.pick()
         self.size = size
-        self.icon = Icon.pick()
         (self.prosperity, self.population, self.defenses) = defaults()
+    }
+    init(size:Size, name: String) {
+        self.init(size:size)
+        self.name = name
     }
 }
