@@ -40,6 +40,16 @@ struct Steading {
             }
         }
         
+        static func values() -> [Size] {
+            var vals:[Size] = []
+            // find the maximum enum value
+            var maxValue: UInt32 = 0
+            while let size = Size(rawValue: ++maxValue) {
+                vals.append(size)
+            }
+            return vals
+        }
+        
     }
     
     // MARK: Population
@@ -160,6 +170,7 @@ struct Steading {
             case .Legion: return "Legion"
             }
         }
+        
         private static let _count: Defenses.RawValue = {
             // find the maximum enum value
             var maxValue: UInt32 = 0
@@ -188,6 +199,11 @@ struct Steading {
         Icon.pick()
     }()
     
+    // MARK: Static Methods
+    
+    static func sizes() -> [Size] {
+        return Size.values()
+    }
     
     // MARK: Methods
     func defaults() -> (Prosperity, Population, Defenses) {

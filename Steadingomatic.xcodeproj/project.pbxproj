@@ -16,7 +16,7 @@
 		240E58561C80DBDC006A5CBA /* DangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E58551C80DBDC006A5CBA /* DangerViewController.swift */; };
 		240E58581C80DBE8006A5CBA /* DangerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E58571C80DBE8006A5CBA /* DangerTableViewCell.swift */; };
 		240E585A1C80DBF4006A5CBA /* DangersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E58591C80DBF4006A5CBA /* DangersTableViewController.swift */; };
-		240E585F1C80F61A006A5CBA /* SteadingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E585E1C80F61A006A5CBA /* SteadingFormViewController.swift */; };
+		240E585F1C80F61A006A5CBA /* SteadingFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E585E1C80F61A006A5CBA /* SteadingFormTableViewController.swift */; };
 		240E58611C80F65C006A5CBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240E58601C80F65C006A5CBA /* Launch Screen.storyboard */; };
 		244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660121C7C849B00F49CE7 /* ElementalVortexWords.json */; };
 		244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660131C7C849B00F49CE7 /* UnholyGroundWords.json */; };
@@ -62,6 +62,7 @@
 		24C5B8551C77A24200A2460E /* Steading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8541C77A24200A2460E /* Steading.swift */; };
 		24C5B8571C77A79D00A2460E /* SubstitutionTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8561C77A79D00A2460E /* SubstitutionTemplate.swift */; };
 		24C5B85F1C77C8AA00A2460E /* SteadingWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 24C5B85E1C77C8AA00A2460E /* SteadingWords.json */; };
+		24DEC9891C83950B00A68282 /* SteadingsSizePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DEC9881C83950B00A68282 /* SteadingsSizePickerView.swift */; };
 		24E621E01C7B7EA000E27DE2 /* SteadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E621DF1C7B7EA000E27DE2 /* SteadingViewController.swift */; };
 		24E621E31C7B800800E27DE2 /* SteadingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E621E21C7B800800E27DE2 /* SteadingDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -93,7 +94,7 @@
 		240E58551C80DBDC006A5CBA /* DangerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangerViewController.swift; sourceTree = "<group>"; };
 		240E58571C80DBE8006A5CBA /* DangerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangerTableViewCell.swift; sourceTree = "<group>"; };
 		240E58591C80DBF4006A5CBA /* DangersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangersTableViewController.swift; sourceTree = "<group>"; };
-		240E585E1C80F61A006A5CBA /* SteadingFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingFormViewController.swift; sourceTree = "<group>"; };
+		240E585E1C80F61A006A5CBA /* SteadingFormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingFormTableViewController.swift; sourceTree = "<group>"; };
 		240E58601C80F65C006A5CBA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		244660121C7C849B00F49CE7 /* ElementalVortexWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalVortexWords.json; sourceTree = "<group>"; };
 		244660131C7C849B00F49CE7 /* UnholyGroundWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnholyGroundWords.json; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		24C5B8541C77A24200A2460E /* Steading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Steading.swift; sourceTree = "<group>"; };
 		24C5B8561C77A79D00A2460E /* SubstitutionTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubstitutionTemplate.swift; sourceTree = "<group>"; };
 		24C5B85E1C77C8AA00A2460E /* SteadingWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SteadingWords.json; sourceTree = "<group>"; };
+		24DEC9881C83950B00A68282 /* SteadingsSizePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingsSizePickerView.swift; sourceTree = "<group>"; };
 		24E621DF1C7B7EA000E27DE2 /* SteadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingViewController.swift; sourceTree = "<group>"; };
 		24E621E21C7B800800E27DE2 /* SteadingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,7 +202,8 @@
 				24C5B84F1C77A18D00A2460E /* SteadingsTableViewController.swift */,
 				24E621DF1C7B7EA000E27DE2 /* SteadingViewController.swift */,
 				2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */,
-				240E585E1C80F61A006A5CBA /* SteadingFormViewController.swift */,
+				240E585E1C80F61A006A5CBA /* SteadingFormTableViewController.swift */,
+				24DEC9881C83950B00A68282 /* SteadingsSizePickerView.swift */,
 			);
 			name = Steadings;
 			sourceTree = "<group>";
@@ -520,7 +523,7 @@
 				240E58581C80DBE8006A5CBA /* DangerTableViewCell.swift in Sources */,
 				247DAADA1C7A48C10070A7FC /* String.swift in Sources */,
 				2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */,
-				240E585F1C80F61A006A5CBA /* SteadingFormViewController.swift in Sources */,
+				240E585F1C80F61A006A5CBA /* SteadingFormTableViewController.swift in Sources */,
 				2407263A1C7CF6A30011882E /* Icon.swift in Sources */,
 				240E585A1C80DBF4006A5CBA /* DangersTableViewController.swift in Sources */,
 				2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */,
@@ -535,6 +538,7 @@
 				24E621E01C7B7EA000E27DE2 /* SteadingViewController.swift in Sources */,
 				24C5B8501C77A18D00A2460E /* SteadingsTableViewController.swift in Sources */,
 				24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */,
+				24DEC9891C83950B00A68282 /* SteadingsSizePickerView.swift in Sources */,
 				24E621E31C7B800800E27DE2 /* SteadingDetailView.swift in Sources */,
 				2467CD231C7BC43D001DF3CD /* Pluralize.swift in Sources */,
 				2407263E1C7E06630011882E /* FrontTableViewCell.swift in Sources */,

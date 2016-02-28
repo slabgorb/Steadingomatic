@@ -145,5 +145,13 @@ class SteadingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Navigation
+    
+    @IBAction func cancelToSteadingsTableViewController(segue:UIStoryboardSegue) {
+    }
+    
+    @IBAction func saveSteading(segue:UIStoryboardSegue) {
+    }
 
 }
