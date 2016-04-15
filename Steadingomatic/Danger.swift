@@ -9,14 +9,14 @@
 import Foundation
 
 class Danger {
-    enum DangerType: UInt32 {
+    enum DangerType: UInt32, CustomStringConvertible {
         case AmbitiousOrganizations
         case PlanarForces
         case ArcaneEnemies
         case Hordes
         case CursedPlaces
     
-        func toString() -> String {
+        var description: String {
             switch self {
             case .AmbitiousOrganizations: return "Ambitious Organizations"
             case .PlanarForces: return "Planar Forces"
@@ -140,7 +140,7 @@ class Danger {
         
     }
     
-    enum DangerSubType: UInt32 {
+    enum DangerSubType: UInt32, CustomStringConvertible {
         case MisguidedGood
         case ThievesGuild
         case Cult
@@ -203,7 +203,7 @@ class Danger {
             }
         }
         
-        func toString() -> String {
+        var description: String {
             switch self {
             case .MisguidedGood: return "Misguided Good"
             case .ThievesGuild: return "Thieves Guild"
@@ -236,7 +236,7 @@ class Danger {
             }
         }
         
-        func impulse() -> String {
+        var impulse: String {
             switch self {
             case .MisguidedGood: return "to do what is 'right' no matter the cost"
             case .ThievesGuild: return "to take by subterfuge"

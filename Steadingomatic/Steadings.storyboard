@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="steadingomatic.ttf">
+            <string>townomatic</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Steadings Table View Controller-->
+        <scene sceneID="qmw-wi-QH6">
+            <objects>
+                <tableViewController id="tM0-hh-sny" customClass="SteadingsTableViewController" customModule="Steadingomatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="WAt-Xc-iKp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="SteadingCell" rowHeight="56" id="ooo-eV-zev" customClass="SteadingTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomRight" tableViewCell="ooo-eV-zev" id="OIH-4b-dmy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0v-UK-AlL">
+                                            <rect key="frame" x="8" y="11" width="39" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-Me-wAW">
+                                            <rect key="frame" x="101" y="11" width="266" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Population" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-DV-5fd">
+                                            <rect key="frame" x="192" y="26" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defenses" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gt-yY-qQV">
+                                            <rect key="frame" x="253" y="26" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prosperity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-C3-RFq">
+                                            <rect key="frame" x="314" y="26" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqX-qV-HS6">
+                                            <rect key="frame" x="55" y="7" width="33" height="29"/>
+                                            <fontDescription key="fontDescription" name="townomatic" family="townomatic" pointSize="24"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelDefenses" destination="0Gt-yY-qQV" id="ZLe-oS-4Qf"/>
+                                    <outlet property="labelIcon" destination="EqX-qV-HS6" id="c8e-xv-djs"/>
+                                    <outlet property="labelName" destination="VfG-Me-wAW" id="FD7-xI-K1f"/>
+                                    <outlet property="labelPopulation" destination="XlU-DV-5fd" id="04C-mF-Pzh"/>
+                                    <outlet property="labelProsperity" destination="WJg-C3-RFq" id="RS7-9X-067"/>
+                                    <outlet property="labelType" destination="u0v-UK-AlL" id="9NL-7V-jjw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tM0-hh-sny" id="Dbc-Pm-bX0"/>
+                            <outlet property="delegate" destination="tM0-hh-sny" id="ooC-mz-Nll"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="z1B-2p-Ty3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="s1N-wW-2Wo">
+                            <connections>
+                                <segue destination="gOl-PU-lHf" kind="presentation" id="kRI-xn-EuE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0t5-hu-j6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.5" y="54.5"/>
+        </scene>
+        <!--Add Steading-->
+        <scene sceneID="XAd-ww-9S9">
+            <objects>
+                <tableViewController id="eOh-3I-xOo" customClass="SteadingFormTableViewController" customModule="Steadingomatic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="xi9-GV-kLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Steading Name" id="5ZU-TW-yXD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g5X-sb-FmU">
+                                        <rect key="frame" x="0.0" y="114" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g5X-sb-FmU" id="8jM-YC-c01">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D7-4c-bkP">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="44"/>
+                                                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Size" id="4xG-cn-x11">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jwo-54-9eJ">
+                                        <rect key="frame" x="0.0" y="209" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jwo-54-9eJ" id="cpe-hv-ngH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-m9-66N">
+                                                    <rect key="frame" x="0.0" y="-86" width="375" height="216"/>
+                                                </pickerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eOh-3I-xOo" id="1G2-YO-KLv"/>
+                            <outlet property="delegate" destination="eOh-3I-xOo" id="poi-a3-zgm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Steading" id="qCK-Dr-XfA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="F17-E5-r1I"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="TgZ-cT-0zN"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="picker" destination="QpL-m9-66N" id="r7v-Fa-Zeo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVj-O2-4KW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="55"/>
+        </scene>
+        <!--Steadings-->
+        <scene sceneID="tX0-ky-cB9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2C9-J4-HFQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Steadings" image="tower" id="2P0-zk-vHp"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back_rounded" id="pwF-2b-RNu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tM0-hh-sny" kind="relationship" relationship="rootViewController" id="9aG-gM-dAN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuq-G9-QFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="55"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sha-CH-Gwg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gOl-PU-lHf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uww-TW-dfL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eOh-3I-xOo" kind="relationship" relationship="rootViewController" id="TCK-4z-lqc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0q-s3-Eof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5" y="54.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_rounded" width="30" height="30"/>
+        <image name="tower" width="30" height="30"/>
+    </resources>
+</document>

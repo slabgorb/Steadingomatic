@@ -26,7 +26,7 @@ class SteadingFormTableViewController: UITableViewController, UIPickerViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         
         // Input data into the Array:
-        pickerData = Steading.sizes().map({$0.toString()})
+        pickerData = Steading.sizes().map({$0.description})
     }
     // The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

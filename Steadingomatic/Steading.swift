@@ -18,12 +18,12 @@ protocol Describable {
 struct Steading {
     // MARK: Size
     
-    enum Size:UInt32, Describable {
+    enum Size:UInt32, CustomStringConvertible {
         case Village
         case Town
         case City
         case Keep
-        func toString() -> String {
+        var description: String {
             switch self {
             case .Village: return "Village"
             case .Town: return "Town"
@@ -31,7 +31,7 @@ struct Steading {
             case .Keep: return "Keep"
             }
         }
-        func description() -> String {
+        var explanation: String {
             switch self {
             case .Village: return "A village"
             case .Town: return "A town"
@@ -54,7 +54,7 @@ struct Steading {
     
     // MARK: Population
     
-    enum Population:UInt32, Describable {
+    enum Population:UInt32, CustomStringConvertible {
         case Lower
         case Exodus
         case Shrinking
@@ -62,7 +62,8 @@ struct Steading {
         case Growing
         case Booming
         case Raise
-        func toString() -> String {
+
+        var description: String {
             switch self {
             case .Lower: return "Ghost Town"
             case .Exodus: return "Exodus"
@@ -86,7 +87,7 @@ struct Steading {
             }
         }
         
-        func description() -> String {
+        var explanation: String {
             switch self {
             case .Lower: return "The steading will decrease its size"
             case .Exodus: return "The steading has lost its population and is on the verge of collapse."
@@ -112,13 +113,13 @@ struct Steading {
     
     // MARK: Prosperity
     
-    enum Prosperity:UInt32 {
+    enum Prosperity:UInt32, CustomStringConvertible {
         case Dirt
         case Poor
         case Moderate
         case Wealthy
         case Rich
-        func toString() -> String {
+        var description: String {
             switch self {
             case .Dirt: return "Dirt"
             case .Poor: return "Poor"
@@ -127,7 +128,7 @@ struct Steading {
             case .Rich: return "Rich"
             }
         }
-        func descibe() -> String {
+        var explanation: String {
             switch self {
             case .Dirt: return "Nothing for sale, nobody has more than they need (and they're lucky if they have that). Unskilled labor is cheap."
             case .Poor: return "Only the bare necessities for sale. Weapons are scarce unless the steading is heavily defended or militant. Unskilled labor is readily available."
@@ -151,7 +152,7 @@ struct Steading {
     
     // MARK: Defenses
     
-    enum Defenses: UInt32 {
+    enum Defenses: UInt32, CustomStringConvertible {
         case None
         case Militia
         case Watch
@@ -159,7 +160,7 @@ struct Steading {
         case Garrison
         case Battalion
         case Legion
-        func toString() -> String {
+        var description: String {
             switch self {
             case .None: return "None"
             case .Militia: return "Militia"
