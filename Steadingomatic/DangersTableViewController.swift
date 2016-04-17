@@ -42,7 +42,7 @@ class DangersTableViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("FrontCell", forIndexPath: indexPath) as! FrontTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("DangerCell", forIndexPath: indexPath) as! DangerTableViewCell
             let danger = dangersData[indexPath.row] as Danger
             cell.labelName.text = danger.name
             

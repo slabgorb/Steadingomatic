@@ -8,7 +8,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="zMx-Ln-grO">
             <objects>
-                <tabBarController id="LNF-6L-toz" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="flipHorizontal" id="LNF-6L-toz" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GHt-0V-bMm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -16,8 +16,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Wp6-R6-ftX" kind="relationship" relationship="viewControllers" id="JMJ-5Z-uVk"/>
                         <segue destination="QcM-Fh-qbF" kind="relationship" relationship="viewControllers" id="lIE-kp-Pya"/>
+                        <segue destination="h4v-Sa-1q5" kind="relationship" relationship="viewControllers" id="GMP-Md-bSv"/>
+                        <segue destination="zcN-lv-kuN" kind="relationship" relationship="viewControllers" id="SE3-vw-Bdx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfC-mt-UHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,69 +33,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iK0-nB-eLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.5" y="30"/>
+            <point key="canvasLocation" x="-207.5" y="536"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="EpO-XJ-kr0">
+        <!--Dangers-->
+        <scene sceneID="dVc-cq-M8t">
             <objects>
-                <tableViewController id="hRz-9O-P6R" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" id="sSl-fc-HVm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontCell" rowHeight="52" id="XR5-Xs-oMq" customClass="FrontTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="52"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XR5-Xs-oMq" id="yOd-Pd-nqa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-mx-VJt">
-                                            <rect key="frame" x="23" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="labelName" destination="uXr-mx-VJt" id="h0a-83-IrC"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hRz-9O-P6R" id="L9V-5O-KG1"/>
-                            <outlet property="delegate" destination="hRz-9O-P6R" id="BGc-0K-eHc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="4zn-f4-Auh"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UWy-Tk-XQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Dangers" id="h4v-Sa-1q5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5U6-Qn-U9N"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efR-2y-I0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213.5" y="940.5"/>
+            <point key="canvasLocation" x="-359.5" y="536"/>
         </scene>
         <!--Fronts-->
-        <scene sceneID="HeD-D3-Wjr">
+        <scene sceneID="TyT-iy-Wse">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wp6-R6-ftX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fronts" image="ship-under-sail" id="ZER-jo-ipK"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zy-dD-5Hc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hRz-9O-P6R" kind="relationship" relationship="rootViewController" id="agB-Yd-soE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9fw-Vx-ltn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Fronts" id="zcN-lv-kuN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lqZ-CS-l25"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ul-jZ-Ype" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353.5" y="940.5"/>
+            <point key="canvasLocation" x="-516.5" y="536"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ship-under-sail" width="30" height="30"/>
-    </resources>
 </document>
