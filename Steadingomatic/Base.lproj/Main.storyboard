@@ -4,11 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="steadingomatic.ttf">
-            <string>townomatic</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="zMx-Ln-grO">
@@ -21,238 +16,23 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4ro-X7-xb1" kind="relationship" relationship="viewControllers" id="2mz-Aq-8oO"/>
                         <segue destination="Wp6-R6-ftX" kind="relationship" relationship="viewControllers" id="JMJ-5Z-uVk"/>
-                        <segue destination="AOF-Wu-nuq" kind="relationship" relationship="viewControllers" id="vLH-vz-n0k"/>
+                        <segue destination="QcM-Fh-qbF" kind="relationship" relationship="viewControllers" id="lIE-kp-Pya"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfC-mt-UHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353.5" y="71.5"/>
+            <point key="canvasLocation" x="-353.5" y="29.5"/>
         </scene>
-        <!--Dangers-->
-        <scene sceneID="L4F-qu-rau">
+        <!--Steadings-->
+        <scene sceneID="4bM-y4-F0q">
             <objects>
-                <tableViewController id="kp6-dm-hwc" customClass="DangersTableViewController" customModule="Steadingomatic" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tis-yo-6oW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aZm-Yx-ZD0" customClass="DangerTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZm-Yx-ZD0" id="RHE-K9-sbm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qU-5E-WhH">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtype" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-dF-UhQ">
-                                            <rect key="frame" x="252" y="12" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-Jq-w5H">
-                                            <rect key="frame" x="196" y="12" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="labelName" destination="6qU-5E-WhH" id="f04-0r-Sba"/>
-                                    <outlet property="labelSubType" destination="zeN-dF-UhQ" id="ZqH-ua-0gc"/>
-                                    <outlet property="labelType" destination="P2b-Jq-w5H" id="TBf-Cr-ui6"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="kp6-dm-hwc" id="q4f-MK-a8w"/>
-                            <outlet property="delegate" destination="kp6-dm-hwc" id="FxK-oo-ec0"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Dangers" id="zbf-yT-5Mn"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EBT-fK-Fd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Steadings" id="QcM-Fh-qbF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4s5-O6-Jaq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iK0-nB-eLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767.5" y="-751.5"/>
-        </scene>
-        <!--Dangers-->
-        <scene sceneID="Dwy-HX-yPS">
-            <objects>
-                <navigationController id="AOF-Wu-nuq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dangers" image="bat" id="adb-bz-f2L"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMf-mx-2uC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="kp6-dm-hwc" kind="relationship" relationship="rootViewController" id="RHi-l7-vte"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbg-ge-kT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="213.5" y="-751.5"/>
-        </scene>
-        <!--Steadings Table View Controller-->
-        <scene sceneID="GTF-19-IHt">
-            <objects>
-                <tableViewController id="HXM-hW-R6i" customClass="SteadingsTableViewController" customModule="Steadingomatic" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="z25-fz-k6X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="SteadingCell" rowHeight="56" id="yy2-gx-G7Q" customClass="SteadingTableViewCell" customModule="Steadingomatic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomRight" tableViewCell="yy2-gx-G7Q" id="NtB-5q-yvW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-sJ-XJQ">
-                                            <rect key="frame" x="8" y="11" width="39" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdo-Jv-AqY">
-                                            <rect key="frame" x="101" y="11" width="266" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Population" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-zS-xwH">
-                                            <rect key="frame" x="192" y="26" width="53" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defenses" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-MQ-0iN">
-                                            <rect key="frame" x="253" y="26" width="53" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prosperity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuP-6Z-5nL">
-                                            <rect key="frame" x="314" y="26" width="53" height="21"/>
-                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-2X-ipC">
-                                            <rect key="frame" x="55" y="7" width="33" height="29"/>
-                                            <fontDescription key="fontDescription" name="townomatic" family="townomatic" pointSize="24"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="labelDefenses" destination="MKB-MQ-0iN" id="t55-Qq-6bl"/>
-                                    <outlet property="labelIcon" destination="cAk-2X-ipC" id="jfa-tm-rki"/>
-                                    <outlet property="labelName" destination="vdo-Jv-AqY" id="Tmi-Gx-rF9"/>
-                                    <outlet property="labelPopulation" destination="AO2-zS-xwH" id="7Ie-jh-Xeq"/>
-                                    <outlet property="labelProsperity" destination="EuP-6Z-5nL" id="u2d-c3-3OP"/>
-                                    <outlet property="labelType" destination="aa2-sJ-XJQ" id="u4e-63-Fd3"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="HXM-hW-R6i" id="HOW-dn-uXA"/>
-                            <outlet property="delegate" destination="HXM-hW-R6i" id="ob9-iH-Tlj"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="AJh-95-ALj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zA0-4v-hcD">
-                            <connections>
-                                <segue destination="Yue-aa-QKh" kind="presentation" id="vUD-gB-KLI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CWj-IQ-p5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="767.5" y="71.5"/>
-        </scene>
-        <!--Add Steading-->
-        <scene sceneID="efJ-hB-kCc">
-            <objects>
-                <tableViewController id="qhC-EZ-bLF" customClass="SteadingFormTableViewController" customModule="Steadingomatic" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="CSq-Zn-42m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection headerTitle="Steading Name" id="bhZ-Wr-87E">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5n8-je-2qC">
-                                        <rect key="frame" x="0.0" y="114" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5n8-je-2qC" id="9uD-jF-Lk8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXt-fi-dqb">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="44"/>
-                                                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Size" id="YR6-cP-tLv">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="P29-0D-IOX">
-                                        <rect key="frame" x="0.0" y="209" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P29-0D-IOX" id="HOU-vN-Lqd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="78Y-Pa-B5e">
-                                                    <rect key="frame" x="0.0" y="-86" width="375" height="216"/>
-                                                </pickerView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="qhC-EZ-bLF" id="kIX-K8-NsH"/>
-                            <outlet property="delegate" destination="qhC-EZ-bLF" id="uEV-2E-AgH"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Add Steading" id="bQi-ha-6ec">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IoB-hC-rhn">
-                            <connections>
-                                <segue destination="Zzq-gU-D7z" kind="unwind" unwindAction="cancelToSteadingsTableViewController:" id="lQX-Zq-krS"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9CJ-bd-Ntt">
-                            <connections>
-                                <segue destination="Zzq-gU-D7z" kind="unwind" unwindAction="saveSteading:" id="Jad-UD-0gJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="picker" destination="78Y-Pa-B5e" id="Emh-qq-Bqz"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WFM-7v-r2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Zzq-gU-D7z" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1863.5" y="71.5"/>
+            <point key="canvasLocation" x="92.5" y="30"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="EpO-XJ-kr0">
@@ -294,25 +74,6 @@
             </objects>
             <point key="canvasLocation" x="213.5" y="940.5"/>
         </scene>
-        <!--Steadings-->
-        <scene sceneID="bCD-EE-3Nk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ro-X7-xb1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Steadings" image="tower" id="j2U-Vq-ZuG"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back_rounded" id="6qk-9k-bKn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HXM-hW-R6i" kind="relationship" relationship="rootViewController" id="Zlx-CQ-mmV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LpT-vo-oak" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="213.5" y="71.5"/>
-        </scene>
         <!--Fronts-->
         <scene sceneID="HeD-D3-Wjr">
             <objects>
@@ -332,29 +93,8 @@
             </objects>
             <point key="canvasLocation" x="-353.5" y="940.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="z6Z-gZ-3j9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yue-aa-QKh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a91-BT-Vuc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="qhC-EZ-bLF" kind="relationship" relationship="rootViewController" id="xer-i1-uJS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tJX-w0-gRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1306" y="72"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="back_rounded" width="19" height="22"/>
-        <image name="bat" width="30" height="30"/>
         <image name="ship-under-sail" width="30" height="30"/>
-        <image name="tower" width="30" height="30"/>
     </resources>
 </document>

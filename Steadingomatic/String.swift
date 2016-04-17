@@ -14,7 +14,7 @@ extension String {
     
     func removeAll(subStrings: [String]) -> String {
         var resultString = self
-        subStrings.map { resultString = resultString.stringByReplacingOccurrencesOfString($0, withString: "") }
+        _ = subStrings.map { resultString = resultString.stringByReplacingOccurrencesOfString($0, withString: "") }
         return resultString
     }
 }

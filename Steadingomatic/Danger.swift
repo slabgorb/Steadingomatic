@@ -28,7 +28,7 @@ class Danger {
         private static let _count: DangerType.RawValue = {
             // find the maximum enum value
             var maxValue: UInt32 = 0
-            while let _ = DangerType(rawValue: ++maxValue) { }
+            while let _ = DangerType(rawValue: maxValue + 1 ) { maxValue += 1 }
             return maxValue
         }()
         static func random() -> DangerType {

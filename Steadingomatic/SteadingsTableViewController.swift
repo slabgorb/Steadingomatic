@@ -80,27 +80,22 @@ class SteadingsTableViewController: UITableViewController {
             return cell
     }
 
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        print("You selected cell #\(indexPath.row)!")
-//        
-//        let indexPath = tableView.indexPathForSelectedRow!
-//   
-//        steadingToPass = steadingsData[indexPath.row]
-//        performSegueWithIdentifier("SelectSteadingRow", sender: self)
-//        
-//    }
-//    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-//        
-//        if (segue.identifier == "SelectSteadingRow") {
-//            
-//            // initialize new view controller and cast it as your view controller
-//            let viewController = segue.destinationViewController as! SteadingViewController
-//            viewController.steading = steadingToPass
-//        }
-//        
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+    }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        
+        if (segue.identifier == "SelectSteadingRow") {
+            let indexPath = tableView.indexPathForSelectedRow!
+            steadingToPass = steadingsData[indexPath.row]
+            // initialize new view controller and cast it as your view controller
+            let viewController = segue.destinationViewController as! SteadingViewController
+            viewController.steading = steadingToPass
+        }
+        
+    }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

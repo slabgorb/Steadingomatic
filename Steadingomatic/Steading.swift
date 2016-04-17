@@ -44,7 +44,8 @@ struct Steading {
             var vals:[Size] = []
             // find the maximum enum value
             var maxValue: UInt32 = 0
-            while let size = Size(rawValue: ++maxValue) {
+            while let size = Size(rawValue: maxValue) {
+                maxValue += 1
                 vals.append(size)
             }
             return vals
@@ -101,7 +102,7 @@ struct Steading {
         private static let _count: Population.RawValue = {
             // find the maximum enum value
             var maxValue: UInt32 = 0
-            while let _ = Population(rawValue: ++maxValue) { }
+            while let _ = Population(rawValue: maxValue) { maxValue += 1}
             return maxValue
         }()
         static func random() -> Population {
@@ -140,7 +141,7 @@ struct Steading {
         private static let _count: Prosperity.RawValue = {
             // find the maximum enum value
             var maxValue: UInt32 = 0
-            while let _ = Prosperity(rawValue: ++maxValue) { }
+            while let _ = Prosperity(rawValue: maxValue) { maxValue += 1 }
             return maxValue
         }()
         static func random() -> Prosperity {
@@ -175,7 +176,7 @@ struct Steading {
         private static let _count: Defenses.RawValue = {
             // find the maximum enum value
             var maxValue: UInt32 = 0
-            while let _ = Defenses(rawValue: ++maxValue) { }
+            while let _ = Defenses(rawValue: maxValue) { maxValue += 1}
             return maxValue
         }()
         static func random() -> Defenses {

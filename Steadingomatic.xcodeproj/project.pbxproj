@@ -19,6 +19,8 @@
 		240E585F1C80F61A006A5CBA /* SteadingFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E585E1C80F61A006A5CBA /* SteadingFormTableViewController.swift */; };
 		240E58611C80F65C006A5CBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240E58601C80F65C006A5CBA /* Launch Screen.storyboard */; };
 		2431BEAD1CC17408008A45FD /* Steadings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2431BEAC1CC17408008A45FD /* Steadings.storyboard */; };
+		2431BEB01CC17F0A008A45FD /* Dangers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2431BEAF1CC17F0A008A45FD /* Dangers.storyboard */; };
+		2431BEB21CC17F14008A45FD /* Fronts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2431BEB11CC17F14008A45FD /* Fronts.storyboard */; };
 		244660141C7C849B00F49CE7 /* ElementalVortexWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660121C7C849B00F49CE7 /* ElementalVortexWords.json */; };
 		244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 244660131C7C849B00F49CE7 /* UnholyGroundWords.json */; };
 		2467CD171C7BA7F4001DF3CD /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD161C7BA7F4001DF3CD /* Front.swift */; };
@@ -98,6 +100,8 @@
 		240E585E1C80F61A006A5CBA /* SteadingFormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingFormTableViewController.swift; sourceTree = "<group>"; };
 		240E58601C80F65C006A5CBA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2431BEAC1CC17408008A45FD /* Steadings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Steadings.storyboard; sourceTree = "<group>"; };
+		2431BEAF1CC17F0A008A45FD /* Dangers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dangers.storyboard; sourceTree = "<group>"; };
+		2431BEB11CC17F14008A45FD /* Fronts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Fronts.storyboard; sourceTree = "<group>"; };
 		244660121C7C849B00F49CE7 /* ElementalVortexWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElementalVortexWords.json; sourceTree = "<group>"; };
 		244660131C7C849B00F49CE7 /* UnholyGroundWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnholyGroundWords.json; sourceTree = "<group>"; };
 		2467CD161C7BA7F4001DF3CD /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 				240E58601C80F65C006A5CBA /* Launch Screen.storyboard */,
 				24C5B81D1C779AEF00A2460E /* Main.storyboard */,
 				2431BEAC1CC17408008A45FD /* Steadings.storyboard */,
+				2431BEAF1CC17F0A008A45FD /* Dangers.storyboard */,
+				2431BEB11CC17F14008A45FD /* Fronts.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				2467CD421C7BD7A1001DF3CD /* DragonWords.json in Resources */,
 				2467CD411C7BD7A1001DF3CD /* WanderingBarbariansWords.json in Resources */,
 				244660151C7C849B00F49CE7 /* UnholyGroundWords.json in Resources */,
+				2431BEB21CC17F14008A45FD /* Fronts.storyboard in Resources */,
 				2467CD1B1C7BAAEF001DF3CD /* BaseWords.json in Resources */,
 				24C5B8241C779AEF00A2460E /* LaunchScreen.storyboard in Resources */,
 				2467CD371C7BCCD9001DF3CD /* ForceOfChaosWords.json in Resources */,
@@ -494,6 +501,7 @@
 				2467CD461C7BD86E001DF3CD /* UndergroundDwellersWords.json in Resources */,
 				2467CD3D1C7BCFBA001DF3CD /* LordOfTheUndeadWords.json in Resources */,
 				24C5B8211C779AEF00A2460E /* Assets.xcassets in Resources */,
+				2431BEB01CC17F0A008A45FD /* Dangers.storyboard in Resources */,
 				240726381C7CF6220011882E /* steadingomatic.ttf in Resources */,
 				2467CD301C7BCC33001DF3CD /* CorruptGovernmentWords.json in Resources */,
 				2467CD351C7BCCD9001DF3CD /* ConstructOfLawWords.json in Resources */,

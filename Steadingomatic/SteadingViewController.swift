@@ -11,11 +11,25 @@ import UIKit
 class SteadingViewController: UIViewController {
     var steading: Steading?
 
+    @IBOutlet weak var steadingNameLabel: UILabel!
+
+    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var populationLabel: UILabel!
+    @IBOutlet weak var defensesLabel: UILabel!
+    @IBOutlet weak var prosperityLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewSteadingDetail.labelSteadingName.text = steading?.name
-
-        // Do any additional setup after loading the view.
+        if let steading = steading {
+            steadingNameLabel.text = steading.name
+            sizeLabel.text = steading.size.description
+            populationLabel.text = steading.population.description
+            defensesLabel.text = steading.defenses.description
+            prosperityLabel.text = steading.prosperity.description
+            iconLabel.text = steading.icon.rawValue
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
