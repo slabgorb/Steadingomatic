@@ -194,12 +194,12 @@
                                             <constraint firstItem="wTf-Dj-HKL" firstAttribute="top" secondItem="F28-kY-jXH" secondAttribute="top" id="wnK-2K-qs7"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-Sd-i2G">
-                                        <rect key="frame" x="0.0" y="304" width="0.0" height="147"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-Sd-i2G">
+                                        <rect key="frame" x="0.0" y="304" width="50" height="147"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-7k-rLv">
-                                        <rect key="frame" x="0.0" y="455" width="0.0" height="137"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-7k-rLv">
+                                        <rect key="frame" x="0.0" y="455" width="50" height="137"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>

@@ -7,171 +7,316 @@
 //
 
 import Foundation
+import UIKit
 enum Icon: String {
-    case Acorn                            = "\u{f007}"
-    case AntelopePassant                  = "\u{f006}"
-    case AntelopeRampantDemonic           = "a"
-    case AntelopeStatant                  = "b"
-    case Ape                              = "c"
-    case ApeCollaredAndChained            = "e"
-    case ArmEmbowedInArmor                = "\u{f036}"
-    case ArmHabitedAndCoupedAtTheElbow    = "\u{f01f}"
-    case Bat                              = "f"
-    case BearPassant                      = "g"
-    case BearRampant                      = "h"
-    case BearSejeantErect                 = "i"
-    case BearStatnt                       = "\u{f008}"
-    case BearsHeadCouped                  = "j"
-    case BearsHeadCoupedEnglish           = "\u{f005}"
-    case BearsHeadErasedAndMuzzled        = "k"
-    case BeeVolant                        = "l"
-    case BoarPassant                      = "m"
-    case BoarRampant                      = "n"
-    case BoarStatant                      = "o"
-    case BoarsHeadCouped                  = "p"
-    case BoarsHeadErased                  = "q"
-    case BordureInvected                  = "r"
-    case BordureNebuly                    = "s"
-    case BordurePotenty                   = "t"
-    case BordureWavy                      = "u"
-    case BucksHeadCouped                  = "v"
-    case BullPassant                      = "w"
-    case BullRampant                      = "x"
-    case BullsHeadCaboshed                = "y"
-    case CatherineWheel                   = "z"
-    case Censer                           = "\u{f028}"
-    case Centaur                          = "A"
-    case Chapeau                          = "B"
-    case ChevalierOnHorseback             = "C"
-    case Cock                             = "D"
-    case ConeyPassant                     = "E"
-    case Conquefoil                       = "F"
-    case Coronet                          = "G"
-    case DogHead                          = "\u{f034}"
-    case DolphinHauriant                  = "H"
-    case DolphinNaiant                    = "I"
-    case DucalCoronet                     = "J"
-    case EagleClose                       = "K"
-    case EagleDisplayed                   = "L"
-    case EagleDisplayedWingsInverted      = "M"
-    case EagleDoubleHeaded                = "N"
-    case EagleRising                      = "O"
-    case EagleRisingWingsAddorsed         = "P"
-    case EagleRisingWingsElevatedAddorsed = "Q"
-    case EagleRisingWingsInverted         = "R"
-    case EaglesHeadCouped                 = "S"
-    case EaglesHeadErased                 = "T"
-    case ElephantAndCastle                = "U"
-    case Enfield                          = "V"
-    case Escallop                         = "\u{f035}"
-    case Estoile                          = "W"
-    case Falcon                           = "X"
-    case Fleece                           = "Y"
-    case FleurDeLis                       = "Z"
-    case FoxPassant                       = "0"
-    case FoxSejeant                       = "1"
-    case Garb                             = "2"
-    case GoatSalient                      = "3"
-    case Goutte                           = "\u{f033}"
-    case HandDexter                       = "\u{f031}"
-    case HandSinister                     = "\u{f032}"
-    case HareSalient                      = "4"
-    case HeraldicAntelopePassant          = "5"
-    case HeraldicAntelopeRampant          = "6"
-    case HeraldicTigerPassant             = "7"
-    case HeraldicTigerRampant             = "8"
-    case Heron                            = "9"
-    case Hind                             = "!"
-    case HorsePassant                     = "'"
-    case HorseRampant                     = "#"
-    case Keys                             = "\u{f030}"
-    case LeopardHeadErased                = "$"
-    case LeopardPassant                   = "%"
-    case LeopardRampant                   = "&"
-    case LeopardsFace                     = "\""
-    case LionRampantRegardant             = "\u{f02a}"
-    case LionSalient                      = "\u{f02b}"
-    case LionSejant                       = "\u{f02d}"
-    case LionSejantRegardantErect         = "\u{f02c}"
-    case LionSejantRegardant              = "\u{f02e}"
-    case LionStatant                      = "\u{f02f}"
-    case Looped                           = "\u{f029}"
-    case LynxCoward                       = "("
-    case Martlet                          = ")"
-    case MartletVolant                    = "*"
-    case Mermaid                          = "+"
-    case Merman                           = ","
-    case Mullet                           = "-"
-    case Mullet1                          = "."
-    case MulletOf6Points                  = "/"
-    case MulletOfPoints                   = ":"
-    case OakTree                          = "<"
-    case Ostrich                          = "="
-    case Otter                            = ">"
-    case Owl                              = "?"
-    case Pegasus                          = "d"
-    case PegasusPassant                   = "@"
-    case PegasusRampant                   = "["
-    case Popinjay                         = "]"
-    case Quatrefoil                       = "^"
-    case RamRampant                       = "_"
-    case RamSkull                         = "\u{f026}"
-    case RamStatant                       = "`"
-    case RamsHeadCaboshed                 = "{"
-    case Raven                            = "|"
-    case Reindeer                         =    "}"
-    case Rose                             = "~"
-    case RoseSlippedAndLeaved             = "\\"
-    case SalmonHauriant                   = "\u{f000}"
-    case SalmonNaiant                     = "\u{f001}"
-    case SeaHorse                         = "\u{f002}"
-    case SeadogRampant                    = "\u{f024}"
-    case Seahog                           = "\u{f023}"
-    case SerpentNowed                     = "\u{f003}"
-    case SheepPassant                     = "\u{f009}"
-    case ShipUnderSail                    = "\u{f00a}"
-    case Sphinx                           = "\u{f00b}"
-    case Squirrel                         = "\u{f00c}"
-    case StagAtGaze                       = "\u{f00d}"
-    case StagLodged                       = "\u{f00e}"
-    case StagSpringing                    = "\u{f00f}"
-    case StagStatant                      = "\u{f010}"
-    case StagTrippant                     = "\u{f011}"
-    case SunInSplendor                    = "\u{f012}"
-    case Swan                             = "\u{f013}"
-    case SwordScimitar                    = "\u{f025}"
-    case TalbotPassant                    = "\u{f014}"
-    case TalbotRampant                    = "\u{f015}"
-    case TalbotSejeant                    = "\u{f016}"
-    case Thistle                          = "\u{f017}"
-    case Tower                            = "\u{f022}"
-    case TowerTriple                      = "\u{f020}"
-    case Trefoil                          = "\u{f027}"
-    case WolfCourant                      = "\u{f018}"
-    case WolfPassant                      = "\u{f019}"
-    case WolfRampant                      = "\u{f01a}"
-    case WolfSalient                      = "\u{f01b}"
-    case WolfStatant                      = "\u{f01c}"
-    case Yale                             = "\u{f01d}"
-    case YaleSejantErect                  = "\u{f01e}"
-    case Ypotryll                         = "\u{f021}"
-    
+    case Acorn = "acorn"
+    case AntelopePassant = "antelope-passant"
+    case AntelopeRampantDemonic = "antelope-rampant-demonic"
+    case AntelopeStatant = "antelope-statant"
+    case Ape = "ape"
+    case ApeCollaredAndChained = "ape-collared-and-chained"
+    case ArmEmbowedInArmor = "arm-embowed-in-armor"
+    case ArmHabitedAndCoupedAtTheElbow = "arm-habited-and-couped-at-the-Elbow"
+    case Bat = "bat"
+    case BearPassant = "bear-passant"
+    case BearRampant = "bear-rampant"
+    case BearSejeantErect = "bear-sejeant-erect"
+    case BearStatnt = "bear-statnt"
+    case BearsHeadCouped = "bears-head-couped"
+    case BearsHeadCoupedEnglish = "bears-head-couped-english"
+    case BearsHeadErasedAndMuzzled = "bears-head-erased-and-muzzled"
+    case BeeVolant = "bee-volant"
+    case BoarPassant = "boar-passant"
+    case BoarRampant = "boar-rampant"
+    case BoarStatant = "boar-statant"
+    case BoarsHeadCouped = "boars-head-couped"
+    case BoarsHeadErased = "boars-head-erased"
+    case BordureInvected = "bordure-invected"
+    case BordureNebuly = "bordure-nebuly"
+    case BordurePotenty = "bordure-potenty"
+    case BordureWavy = "bordure-wavy"
+    case BucksHeadCouped = "bucks-head-couped"
+    case BullPassant = "bull-passant"
+    case BullRampant = "bull-rampant"
+    case BullsHeadCaboshed = "bulls-head-caboshed"
+    case CatherineWheel = "catherine-wheel"
+    case Censer = "censer"
+    case Centaur = "centaur"
+    case Chapeau = "chapeau"
+    case ChevalierOnHorseback = "chevalier-on-horseback"
+    case Cock = "cock"
+    case ConeyPassant = "coney-passant"
+    case Conquefoil = "conquefoil"
+    case Coronet = "coronet"
+    case DogHead = "dog-head"
+    case DolphinHauriant = "dolphin-hauriant"
+    case DolphinNaiant = "dolphin-naiant"
+    case DucalCoronet = "ducal-coronet"
+    case EagleClose = "eagle-close"
+    case EagleDisplayed = "eagle-displayed"
+    case EagleDisplayedWingsInverted = "eagle-displayed-wings-inverted"
+    case EagleDoubleHeaded = "eagle-double-headed"
+    case EagleRising = "eagle-rising"
+    case EagleRisingWingsAddorsed = "eagle-rising-wings-addorsed"
+    case EagleRisingWingsElevatedAddorsed = "eagle-rising-wings-elevated-addorsed"
+    case EagleRisingWingsInverted = "eagle-rising-wings-inverted"
+    case EaglesHeadCouped = "eagles-head-couped"
+    case EaglesHeadErased = "eagles-head-erased"
+    case ElephantAndCastle = "elephant-and-castle"
+    case Enfield = "enfield"
+    case Escallop = "escallop"
+    case Estoile = "estoile"
+    case Falcon = "falcon"
+    case Fleece = "fleece"
+    case FleurDeLis = "fleur-de-Lis"
+    case FoxPassant = "fox-passant"
+    case FoxSejeant = "fox-sejeant"
+    case Garb = "garb"
+    case GoatSalient = "goat-salient"
+    case Goutte = "goutte"
+    case HandDexter = "hand-dexter"
+    case HandSinister = "hand-sinister"
+    case HareSalient = "hare-salient"
+    case HeraldicAntelopePassant = "heraldic-antelope-passant"
+    case HeraldicAntelopeRampant = "heraldic-antelope-rampant"
+    case HeraldicTigerPassant = "heraldic-tiger-passant"
+    case HeraldicTigerRampant = "heraldic-tiger-rampant"
+    case Heron = "heron"
+    case Hind = "hind"
+    case HorsePassant = "horse-passant"
+    case HorseRampant = "horse-rampant"
+    case Keys = "keys"
+    case LeopardHeadErased = "leopard-head-erased"
+    case LeopardPassant = "leopard-passant"
+    case LeopardRampant = "leopard-rampant"
+    case LeopardsFace = "leopards-face"
+    case LionRampantRegardant = "lion-rampant-regardant"
+    case LionSalient = "lion-salient"
+    case LionSejant = "lion-sejant"
+    case LionSejantRegardantErect = "lion-sejant-regardant-erect"
+    case LionSejantRegardant = "lion-sejant-regardant"
+    case LionStatant = "lion-statant"
+    case Looped = "looped"
+    case LynxCoward = "lynx-coward"
+    case Martlet = "martlet"
+    case MartletVolant = "martlet-volant"
+    case Mermaid = "mermaid"
+    case Merman = "merman"
+    case Mullet = "mullet"
+    case Mullet1 = "mullet1"
+    case MulletOf6Points = "mullet-of6-points"
+    case MulletOfPoints = "mullet-of-points"
+    case OakTree = "oak-tree"
+    case Ostrich = "ostrich"
+    case Otter = "otter"
+    case Owl = "owl"
+    case Pegasus = "pegasus"
+    case PegasusPassant = "pegasus-passant"
+    case PegasusRampant = "pegasus-rampant"
+    case Popinjay = "popinjay"
+    case Quatrefoil = "quatrefoil"
+    case RamRampant = "ram-rampant"
+    case RamSkull = "ram-skull"
+    case RamStatant = "ram-statant"
+    case RamsHeadCaboshed = "rams-head-caboshed"
+    case Raven = "raven"
+    case Reindeer = "reindeer"
+    case Rose = "rose"
+    case RoseSlippedAndLeaved = "rose-slipped-and-leaved"
+    case SalmonHauriant = "salmon-hauriant"
+    case SalmonNaiant = "salmon-naiant"
+    case SeaHorse = "sea-horse"
+    case SeadogRampant = "seadog-rampant"
+    case Seahog = "seahog"
+    case SerpentNowed = "serpent-nowed"
+    case SheepPassant = "sheep-passant"
+    case ShipUnderSail = "ship-under-sail"
+    case Sphinx = "sphinx"
+    case Squirrel = "squirrel"
+    case StagAtGaze = "stag-at-gaze"
+    case StagLodged = "stag-lodged"
+    case StagSpringing = "stag-springing"
+    case StagStatant = "stag-statant"
+    case StagTrippant = "stag-trippant"
+    case SunInSplendor = "sun-in-splendor"
+    case Swan = "swan"
+    case SwordScimitar = "sword-scimitar"
+    case TalbotPassant = "talbot-passant"
+    case TalbotRampant = "talbot-rampant"
+    case TalbotSejeant = "talbot-sejeant"
+    case Thistle = "thistle"
+    case Tower = "tower"
+    case TowerTriple = "tower-triple"
+    case Trefoil = "trefoil"
+    case WolfCourant = "wolf-courant"
+    case WolfPassant = "wolf-passant"
+    case WolfRampant = "wolf-rampant"
+    case WolfSalient = "wolf-salient"
+    case WolfStatant = "wolf-statant"
+    case Yale = "yale"
+    case YaleSejantErect = "yale-sejant-erect"
+    case Ypotryll = "ypotryll"
+
+
     static func allValues() -> [String] {
-        return ["\u{f007}","\u{f006}","a","b","c","e","\u{f036}","\u{f01f}","f","g","h","i","\u{f008}","j","\u{f005}",
-            "k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","\u{f028}","A","B","C","D","E","F","G",
-            "\u{f034}","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","\u{f035}","W","X","Y","Z","0",
-            "1","2","3","\u{f033}","\u{f031}","\u{f032}","4","5","6","7","8","9","!","'","#","\u{f030}","$","%","&",
-            "\"","\u{f02a}","\u{f02b}","\u{f02d}","\u{f02c}","\u{f02e}","\u{f02f}","\u{f029}","(",")","*","+",
-            ",","-",".","/",":","<","=",">","?","d","@","[","]","^","_","\u{f026}","`","{","|","}","~","\\",
-            "\u{f000}","\u{f001}","\u{f002}","\u{f024}","\u{f023}","\u{f003}","\u{f009}","\u{f00a}","\u{f00b}",
-            "\u{f00c}","\u{f00d}","\u{f00e}","\u{f00f}","\u{f010}","\u{f011}","\u{f012}","\u{f013}","\u{f025}",
-            "\u{f014}","\u{f015}","\u{f016}","\u{f017}","\u{f022}","\u{f020}","\u{f027}","\u{f018}","\u{f019}",
-            "\u{f01a}","\u{f01b}","\u{f01c}","\u{f01d}","\u{f01e}","\u{f021}"]
+        return ["acorn",
+        "antelope-passant",
+        "antelope-rampant-demonic",
+        "antelope-statant",
+        "ape",
+        "ape-collared-and-chained",
+        "arm-embowed-in-armor",
+        "arm-habited-and-couped-at-the-Elbow",
+        "bat",
+        "bear-passant",
+        "bear-rampant",
+        "bear-sejeant-erect",
+        "bear-statnt",
+        "bears-head-couped",
+        "bears-head-couped-english",
+        "bears-head-erased-and-muzzled",
+        "bee-volant",
+        "boar-passant",
+        "boar-rampant",
+        "boar-statant",
+        "boars-head-couped",
+        "boars-head-erased",
+        "bordure-invected",
+        "bordure-nebuly",
+        "bordure-potenty",
+        "bordure-wavy",
+        "bucks-head-couped",
+        "bull-passant",
+        "bull-rampant",
+        "bulls-head-caboshed",
+        "catherine-wheel",
+        "censer",
+        "centaur",
+        "chapeau",
+        "chevalier-on-horseback",
+        "cock",
+        "coney-passant",
+        "conquefoil",
+        "coronet",
+        "dog-head",
+        "dolphin-hauriant",
+        "dolphin-naiant",
+        "ducal-coronet",
+        "eagle-close",
+        "eagle-displayed",
+        "eagle-displayed-wings-inverted",
+        "eagle-double-headed",
+        "eagle-rising",
+        "eagle-rising-wings-addorsed",
+        "eagle-rising-wings-elevated-addorsed",
+        "eagle-rising-wings-inverted",
+        "eagles-head-couped",
+        "eagles-head-erased",
+        "elephant-and-castle",
+        "enfield",
+        "escallop",
+        "estoile",
+        "falcon",
+        "fleece",
+        "fleur-de-Lis",
+        "fox-passant",
+        "fox-sejeant",
+        "garb",
+        "goat-salient",
+        "goutte",
+        "hand-dexter",
+        "hand-sinister",
+        "hare-salient",
+        "heraldic-antelope-passant",
+        "heraldic-antelope-rampant",
+        "heraldic-tiger-passant",
+        "heraldic-tiger-rampant",
+        "heron",
+        "hind",
+        "horse-passant",
+        "horse-rampant",
+        "keys",
+        "leopard-head-erased",
+        "leopard-passant",
+        "leopard-rampant",
+        "leopards-face",
+        "lion-rampant-regardant",
+        "lion-salient",
+        "lion-sejant",
+        "lion-sejant-regardant-erect",
+        "lion-sejant-regardant",
+        "lion-statant",
+        "looped",
+        "lynx-coward",
+        "martlet",
+        "martlet-volant",
+        "mermaid",
+        "merman",
+        "mullet",
+        "mullet1",
+        "mullet-of6-points",
+        "mullet-of-points",
+        "oak-tree",
+        "ostrich",
+        "otter",
+        "owl",
+        "pegasus",
+        "pegasus-passant",
+        "pegasus-rampant",
+        "popinjay",
+        "quatrefoil",
+        "ram-rampant",
+        "ram-skull",
+        "ram-statant",
+        "rams-head-caboshed",
+        "raven",
+        "reindeer",
+        "rose",
+        "rose-slipped-and-leaved",
+        "salmon-hauriant",
+        "salmon-naiant",
+        "sea-horse",
+        "seadog-rampant",
+        "seahog",
+        "serpent-nowed",
+        "sheep-passant",
+        "ship-under-sail",
+        "sphinx",
+        "squirrel",
+        "stag-at-gaze",
+        "stag-lodged",
+        "stag-springing",
+        "stag-statant",
+        "stag-trippant",
+        "sun-in-splendor",
+        "swan",
+        "sword-scimitar",
+        "talbot-passant",
+        "talbot-rampant",
+        "talbot-sejeant",
+        "thistle",
+        "tower",
+        "tower-triple",
+        "trefoil",
+        "wolf-courant",
+        "wolf-passant",
+        "wolf-rampant",
+        "wolf-salient",
+        "wolf-statant",
+        "yale",
+        "yale-sejant-erect",
+        "ypotryll"]
+
     }
+
     static func pick() -> Icon {
         // pick and return a new value
         let rand = arc4random_uniform(UInt32(Icon.allValues().count))
         return Icon(rawValue: Icon.allValues()[Int(rand)])!
+    }
+
+    func toImage() -> UIImage? {
+        return UIImage(named: self.rawValue)
     }
     
 }
