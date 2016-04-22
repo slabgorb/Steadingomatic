@@ -12,8 +12,7 @@ class SteadingViewController: UIViewController {
     var steading: Steading?
 
     @IBOutlet weak var steadingNameLabel: UILabel!
-
-    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var populationLabel: UILabel!
     @IBOutlet weak var defensesLabel: UILabel!
     @IBOutlet weak var prosperityLabel: UILabel!
@@ -27,8 +26,9 @@ class SteadingViewController: UIViewController {
             populationLabel.text = steading.population.description
             defensesLabel.text = steading.defenses.description
             prosperityLabel.text = steading.prosperity.description
-            iconLabel.text = steading.icon.rawValue
-            
+            iconImage.image = steading.icon.toImage(.Large)
+            iconImage.tintColor = steading.iconColor
+            iconImage.backgroundColor = steading.iconBackgroundColor
         }
     }
 

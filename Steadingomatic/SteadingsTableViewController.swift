@@ -75,8 +75,9 @@ class SteadingsTableViewController: UITableViewController {
             cell.labelDefenses.text = steading.defenses.description
             cell.labelProsperity.text = steading.prosperity.description
             cell.labelType.text = steading.size.description
-            cell.labelIcon.text = steading.icon.rawValue
-            
+            cell.iconImage.image = steading.icon.toImage()
+            cell.iconImage.tintColor = steading.iconColor
+            cell.iconImage.backgroundColor = steading.iconBackgroundColor
             return cell
     }
 

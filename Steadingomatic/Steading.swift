@@ -194,6 +194,8 @@ struct Steading {
         Steading.nameTemplate.pick()
     }()
     var size: Size
+    var iconBackgroundColor = UIColor.random()
+    var iconColor = UIColor.blackColor()
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
@@ -224,6 +226,7 @@ struct Steading {
     init(size:Size) {
         self.size = size
         (self.prosperity, self.population, self.defenses) = defaults()
+        self.iconColor = self.iconBackgroundColor.contrasting()
     }
     init(size:Size, name: String) {
         self.init(size:size)

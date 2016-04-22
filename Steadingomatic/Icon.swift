@@ -8,6 +8,13 @@
 
 import Foundation
 import UIKit
+
+enum IconSize: String {
+    case Small = ""
+    case Large = "lg-"
+
+}
+
 enum Icon: String {
     case Acorn = "acorn"
     case AntelopePassant = "antelope-passant"
@@ -16,7 +23,7 @@ enum Icon: String {
     case Ape = "ape"
     case ApeCollaredAndChained = "ape-collared-and-chained"
     case ArmEmbowedInArmor = "arm-embowed-in-armor"
-    case ArmHabitedAndCoupedAtTheElbow = "arm-habited-and-couped-at-the-Elbow"
+    case ArmHabitedAndCoupedAtTheElbow = "arm-habited-and-couped-at-the-elbow"
     case Bat = "bat"
     case BearPassant = "bear-passant"
     case BearRampant = "bear-rampant"
@@ -315,8 +322,13 @@ enum Icon: String {
         return Icon(rawValue: Icon.allValues()[Int(rand)])!
     }
 
-    func toImage() -> UIImage? {
-        return UIImage(named: self.rawValue)
+    func toImage(size:IconSize = .Small) -> UIImage? {
+        var prefix: String
+        switch size {
+        case .Small: prefix = ""
+        case .Large: prefix = "lg-"
+        }
+        return  UIImage(named: "\(prefix)\(self.rawValue)")?.imageWithRenderingMode(.AlwaysTemplate)
     }
     
 }

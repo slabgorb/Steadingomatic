@@ -51,6 +51,7 @@
 		2467CD4C1C7C7F56001DF3CD /* ChosenOneWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 2467CD4B1C7C7F56001DF3CD /* ChosenOneWords.json */; };
 		2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */; };
 		247DAADA1C7A48C10070A7FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DAAD91C7A48C10070A7FC /* String.swift */; };
+		24924B621CCA78CE00E6E05D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24924B611CCA78CE00E6E05D /* UIColor.swift */; };
 		24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8191C779AEF00A2460E /* AppDelegate.swift */; };
 		24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B81B1C779AEF00A2460E /* ViewController.swift */; };
 		24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C5B81D1C779AEF00A2460E /* Main.storyboard */; };
@@ -132,6 +133,7 @@
 		2467CD4B1C7C7F56001DF3CD /* ChosenOneWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChosenOneWords.json; sourceTree = "<group>"; };
 		2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingTableViewCell.swift; sourceTree = "<group>"; };
 		247DAAD91C7A48C10070A7FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		24924B611CCA78CE00E6E05D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		24C5B8161C779AEF00A2460E /* Steadingomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadingomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5B8191C779AEF00A2460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C5B81B1C779AEF00A2460E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,8 +221,16 @@
 			children = (
 				247DAAD91C7A48C10070A7FC /* String.swift */,
 				2467CD221C7BC43D001DF3CD /* Pluralize.swift */,
+				24924B611CCA78CE00E6E05D /* UIColor.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		24924B631CCAC03400E6E05D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		24C5B80D1C779AEF00A2460E = {
@@ -246,6 +256,7 @@
 		24C5B8181C779AEF00A2460E /* Steadingomatic */ = {
 			isa = PBXGroup;
 			children = (
+				24924B631CCAC03400E6E05D /* Protocols */,
 				247DAAD81C7A48AB0070A7FC /* Helpers */,
 				24C5B85B1C77C86000A2460E /* Data */,
 				24C5B8531C77A23100A2460E /* Models */,
@@ -542,6 +553,7 @@
 				2407263C1C7E03900011882E /* FrontsTableViewController.swift in Sources */,
 				24C5B8551C77A24200A2460E /* Steading.swift in Sources */,
 				2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */,
+				24924B621CCA78CE00E6E05D /* UIColor.swift in Sources */,
 				240E58561C80DBDC006A5CBA /* DangerViewController.swift in Sources */,
 				240726401C7E07560011882E /* FrontViewController.swift in Sources */,
 				2467CD211C7BC023001DF3CD /* Doom.swift in Sources */,
