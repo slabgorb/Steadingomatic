@@ -52,6 +52,9 @@
 		2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */; };
 		247DAADA1C7A48C10070A7FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DAAD91C7A48C10070A7FC /* String.swift */; };
 		24924B621CCA78CE00E6E05D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24924B611CCA78CE00E6E05D /* UIColor.swift */; };
+		24924B651CCAC19100E6E05D /* Taggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24924B641CCAC19100E6E05D /* Taggable.swift */; };
+		24924B671CCAC1CD00E6E05D /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24924B661CCAC1CD00E6E05D /* Tag.swift */; };
+		24924B691CCAD13D00E6E05D /* PropertyListReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24924B681CCAD13D00E6E05D /* PropertyListReadable.swift */; };
 		24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B8191C779AEF00A2460E /* AppDelegate.swift */; };
 		24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5B81B1C779AEF00A2460E /* ViewController.swift */; };
 		24C5B81F1C779AEF00A2460E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C5B81D1C779AEF00A2460E /* Main.storyboard */; };
@@ -134,6 +137,9 @@
 		2467CD501C7C802E001DF3CD /* SteadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadingTableViewCell.swift; sourceTree = "<group>"; };
 		247DAAD91C7A48C10070A7FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		24924B611CCA78CE00E6E05D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		24924B641CCAC19100E6E05D /* Taggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taggable.swift; sourceTree = "<group>"; };
+		24924B661CCAC1CD00E6E05D /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		24924B681CCAD13D00E6E05D /* PropertyListReadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListReadable.swift; sourceTree = "<group>"; };
 		24C5B8161C779AEF00A2460E /* Steadingomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadingomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C5B8191C779AEF00A2460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C5B81B1C779AEF00A2460E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +235,8 @@
 		24924B631CCAC03400E6E05D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				24924B641CCAC19100E6E05D /* Taggable.swift */,
+				24924B681CCAD13D00E6E05D /* PropertyListReadable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 		24C5B8531C77A23100A2460E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				24924B661CCAC1CD00E6E05D /* Tag.swift */,
 				24C5B8561C77A79D00A2460E /* SubstitutionTemplate.swift */,
 				24C5B8541C77A24200A2460E /* Steading.swift */,
 				2467CD161C7BA7F4001DF3CD /* Front.swift */,
@@ -550,7 +559,9 @@
 				2407263A1C7CF6A30011882E /* Icon.swift in Sources */,
 				240E585A1C80DBF4006A5CBA /* DangersTableViewController.swift in Sources */,
 				2467CD191C7BA7FE001DF3CD /* Danger.swift in Sources */,
+				24924B671CCAC1CD00E6E05D /* Tag.swift in Sources */,
 				2407263C1C7E03900011882E /* FrontsTableViewController.swift in Sources */,
+				24924B651CCAC19100E6E05D /* Taggable.swift in Sources */,
 				24C5B8551C77A24200A2460E /* Steading.swift in Sources */,
 				2467CD511C7C802E001DF3CD /* SteadingTableViewCell.swift in Sources */,
 				24924B621CCA78CE00E6E05D /* UIColor.swift in Sources */,
@@ -561,6 +572,7 @@
 				24C5B81C1C779AEF00A2460E /* ViewController.swift in Sources */,
 				24E621E01C7B7EA000E27DE2 /* SteadingViewController.swift in Sources */,
 				24C5B8501C77A18D00A2460E /* SteadingsTableViewController.swift in Sources */,
+				24924B691CCAD13D00E6E05D /* PropertyListReadable.swift in Sources */,
 				24C5B81A1C779AEF00A2460E /* AppDelegate.swift in Sources */,
 				24DEC9891C83950B00A68282 /* SteadingsSizePickerView.swift in Sources */,
 				24E621E31C7B800800E27DE2 /* SteadingDetailView.swift in Sources */,

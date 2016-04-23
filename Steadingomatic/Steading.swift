@@ -15,7 +15,10 @@ protocol Describable {
 }
 
 
-struct Steading {
+class Steading {
+
+    var tags: Set<Tag>
+
     // MARK: Size
     
     enum Size:UInt32, CustomStringConvertible {
@@ -225,11 +228,36 @@ struct Steading {
     
     init(size:Size) {
         self.size = size
+        self.tags = []
         (self.prosperity, self.population, self.defenses) = defaults()
         self.iconColor = self.iconBackgroundColor.contrasting()
     }
-    init(size:Size, name: String) {
+    convenience init(size:Size, name: String) {
         self.init(size:size)
         self.name = name
     }
+
+    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("mapList")
+
+
+    // MARK:- NSCoding
+    required init?(coder aDecoder: NSCoder) {
+        guard let rawSize = aDecoder.decodeObjectForKey("size") as? UInt32? else { return nil }
+        guard let size = Size(rawValue: rawSize!) else { return nil }
+
+        self.size = size
+        self.tags = []
+
+    }
+
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeInt(Int32(size.rawValue), forKey:"size")
+    }
+
+}
+
+
+extension Steading: Taggable {
+
 }
