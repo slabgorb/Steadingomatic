@@ -196,16 +196,10 @@ class Steading {
     var name: String = {
         Steading.nameTemplate.pick()
     }()
-    var size: Size
-    var iconBackgroundColor = UIColor.random()
-    var iconColor = UIColor.blackColor()
     var population: Population = .Steady
     var defenses: Defenses = .Militia
     var prosperity: Prosperity = .Moderate
-    var icon: Icon = {
-        Icon.pick()
-    }()
-    
+    var icon: Icon? = Icon(icon: IconImage.pick())
     // MARK: Static Methods
     
     static func sizes() -> [Size] {
@@ -213,8 +207,8 @@ class Steading {
     }
     
     // MARK: Methods
-    func defaults() -> (Prosperity, Population, Defenses) {
-        switch self.size {
+    func defaults(size: Size) -> (Prosperity, Population, Defenses) {
+        switch size {
         case .Village:
             return (.Poor, .Steady, .Militia)
         case .Town:
@@ -227,33 +221,52 @@ class Steading {
     }
     
     init(size:Size) {
-        self.size = size
         self.tags = []
-        (self.prosperity, self.population, self.defenses) = defaults()
-        self.iconColor = self.iconBackgroundColor.contrasting()
+        tags.insert(Tag(key: "Size", value: size.description, description: size.explanation))
+        (self.prosperity, self.population, self.defenses) = defaults(size)
     }
+    
     convenience init(size:Size, name: String) {
         self.init(size:size)
         self.name = name
     }
 
     static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("mapList")
+    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("steadings")
 
 
     // MARK:- NSCoding
     required init?(coder aDecoder: NSCoder) {
-        guard let rawSize = aDecoder.decodeObjectForKey("size") as? UInt32? else { return nil }
-        guard let size = Size(rawValue: rawSize!) else { return nil }
-
-        self.size = size
+        guard let name = aDecoder.decodeObjectForKey(Steading.kName) as? String else { return nil }
+        guard let rawTags = aDecoder.decodeObjectForKey(Steading.kTags) as? [NSDictionary] else { return nil }
+        self.name = name
         self.tags = []
-
+        for tagDictionary in rawTags {
+            if let tag = Tag(propertyListRepresentation: tagDictionary) {
+                self.tags.insert(tag)
+            }
+        }
+        if let rawIcon = aDecoder.decodeObjectForKey(Steading.kIcon) as? NSDictionary {
+            self.icon = Icon(propertyListRepresentation: rawIcon)
+        } 
+        
     }
 
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeInt(Int32(size.rawValue), forKey:"size")
+        aCoder.encodeObject(name, forKey: Steading.kName)
+        let tagRepresentation = tags.map{$0.propertyListRepresentation()}
+        aCoder.encodeObject(tagRepresentation, forKey: Steading.kTags)
+        if let icon = self.icon {
+            aCoder.encodeObject(icon.propertyListRepresentation(), forKey: Steading.kIcon)
+        }
+        
     }
+    
+    static let kName = "name"
+    static let kTags = "tags"
+    static let kIcon = "icon"
+    static let kBackgroundColor = "background_color"
+    static let kIconColor = "icon_color"
 
 }
 

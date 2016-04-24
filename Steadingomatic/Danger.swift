@@ -274,7 +274,7 @@ class Danger {
     var subtype: DangerSubType?
     var nameTemplate: SubstitutionTemplate
     var name: String = ""
-    var icon: Icon = Icon.Acorn
+    var icon: Icon = Icon(icon: .Acorn)
     var description: String?
     
     init() {
@@ -282,6 +282,6 @@ class Danger {
         self.subtype = self.type!.randomSubType()
         self.nameTemplate = SubstitutionTemplate(filepaths: [self.subtype!.wordFile()])
         self.name = self.nameTemplate.pick()
-        self.icon = Icon.pick()
+        self.icon = Icon(icon:IconImage.pick())
     }
 }

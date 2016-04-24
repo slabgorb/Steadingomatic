@@ -22,13 +22,13 @@ class SteadingViewController: UIViewController {
         super.viewDidLoad()
         if let steading = steading {
             steadingNameLabel.text = steading.name
-            sizeLabel.text = steading.size.description
-            populationLabel.text = steading.population.description
-            defensesLabel.text = steading.defenses.description
-            prosperityLabel.text = steading.prosperity.description
-            iconImage.image = steading.icon.toImage(.Large)
-            iconImage.tintColor = steading.iconColor
-            iconImage.backgroundColor = steading.iconBackgroundColor
+            sizeLabel.text = steading.tagByKey("size")?.value
+            populationLabel.text = steading.tagByKey("population")?.value
+            defensesLabel.text = steading.tagByKey("defenses")?.value
+            prosperityLabel.text = steading.tagByKey("prosperity")?.value
+            iconImage.image = steading.icon?.image.toImage(.Large)
+            iconImage.tintColor = steading.icon?.color
+            iconImage.backgroundColor = steading.icon?.backgroundColor
         }
     }
 

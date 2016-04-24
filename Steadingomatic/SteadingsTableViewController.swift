@@ -71,13 +71,13 @@ class SteadingsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("SteadingCell", forIndexPath: indexPath) as! SteadingTableViewCell
             let steading = steadingsData[indexPath.row] as Steading
             cell.labelName.text = steading.name
-            cell.labelPopulation.text = steading.population.description
-            cell.labelDefenses.text = steading.defenses.description
-            cell.labelProsperity.text = steading.prosperity.description
-            cell.labelType.text = steading.size.description
-            cell.iconImage.image = steading.icon.toImage()
-            cell.iconImage.tintColor = steading.iconColor
-            cell.iconImage.backgroundColor = steading.iconBackgroundColor
+            cell.labelType.text = steading.tagByKey("size")?.value
+            cell.labelPopulation.text = steading.tagByKey("population")?.value
+            cell.labelDefenses.text = steading.tagByKey("defenses")?.value
+            cell.labelProsperity.text = steading.tagByKey("prosperity")?.value
+            cell.iconImage.image = steading.icon?.image.toImage(.Large)
+            cell.iconImage.tintColor = steading.icon?.color
+            cell.iconImage.backgroundColor = steading.icon?.backgroundColor
             return cell
     }
 

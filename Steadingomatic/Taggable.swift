@@ -19,6 +19,24 @@ extension Taggable {
     func addTag(tag:Tag) {
         tags.insert(tag)
     }
+    
+    func tagByKey(key: String) -> Tag? {
+        for tag in tags {
+            if tag.key == key {
+                return tag
+            }
+        }
+        return nil
+    }
+    
+    func hasTagOfKey(key: String) -> Bool {
+        for tag in tags {
+            if tag.key == key {
+                return true
+            }
+        }
+        return false
+    }
 
     func deleteTag(tag:Tag) {
         if let index = tags.indexOf(tag) {

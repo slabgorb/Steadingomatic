@@ -26,16 +26,16 @@ extension UIColor {
         return UIColor.blackColor()
     }
 
-    func rgb() -> (red:Double, green:Double, blue:Double, alpha:Double)? {
+    func rgb() -> (red:CGFloat, green:CGFloat, blue:CGFloat, alpha:CGFloat)? {
         var fRed : CGFloat = 0
         var fGreen : CGFloat = 0
         var fBlue : CGFloat = 0
         var fAlpha: CGFloat = 0
         if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
-            let iRed = Double(fRed * 255.0)
-            let iGreen = Double(fGreen * 255.0)
-            let iBlue = Double(fBlue * 255.0)
-            let iAlpha = Double(fAlpha * 255.0)
+            let iRed = CGFloat(fRed * 255.0)
+            let iGreen = CGFloat(fGreen * 255.0)
+            let iBlue = CGFloat(fBlue * 255.0)
+            let iAlpha = CGFloat(fAlpha * 255.0)
 
             return (red:iRed, green:iGreen, blue:iBlue, alpha:iAlpha)
         } else {
@@ -44,3 +44,4 @@ extension UIColor {
         }
     }
 }
+

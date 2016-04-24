@@ -18,8 +18,4 @@ extension PropertyListReadable {
         return encodedArray.map{$0 as? NSDictionary}.flatMap{T(propertyListRepresentation:$0)}
     }
 
-    func saveValuesToDefaults<T:PropertyListReadable>(newValues:[T], key:String) {
-        let encodedValues = newValues.map{$0.propertyListRepresentation()}
-        NSUserDefaults.standardUserDefaults().setObject(encodedValues, forKey:key)
-    }
 }
