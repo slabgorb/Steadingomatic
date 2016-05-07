@@ -14,6 +14,9 @@ protocol Describable {
     func description() -> String
 }
 
+protocol TagConvertible {
+    func toTag() -> Tag
+}
 
 class Steading {
 
@@ -21,7 +24,7 @@ class Steading {
 
     // MARK: Size
     
-    enum Size:UInt32, CustomStringConvertible {
+    enum Size:UInt32, CustomStringConvertible, TagConvertible {
         case Village
         case Town
         case City
@@ -54,11 +57,16 @@ class Steading {
             return vals
         }
         
+        
+        func toTag() -> Tag {
+            return Tag(key: "size", value: self.description, description: self.explanation)
+        }
+        
     }
     
     // MARK: Population
     
-    enum Population:UInt32, CustomStringConvertible {
+    enum Population:UInt32, CustomStringConvertible, TagConvertible {
         case Lower
         case Exodus
         case Shrinking
@@ -113,6 +121,9 @@ class Steading {
             let rand = arc4random_uniform(_count)
             return Population(rawValue: rand)!
         }
+        func toTag() -> Tag {
+            return Tag(key: "population", value: self.description, description: self.explanation)
+        }
     }
     
     // MARK: Prosperity
@@ -152,6 +163,9 @@ class Steading {
             let rand = arc4random_uniform(_count)
             return Prosperity(rawValue: rand)!
         }
+        func toTag() -> Tag {
+            return Tag(key: "prosperity", value: self.description, description: self.explanation)
+        }
     }
     
     // MARK: Defenses
@@ -187,6 +201,9 @@ class Steading {
             let rand = arc4random_uniform(_count)
             return Defenses(rawValue: rand)!
         }
+        func toTag() -> Tag {
+            return Tag(key: "defenses", value: self.description, description: "")
+        }
     }
     
     // MARK: Properties
@@ -207,23 +224,25 @@ class Steading {
     }
     
     // MARK: Methods
-    func defaults(size: Size) -> (Prosperity, Population, Defenses) {
+    func defaults(size: Size) -> [Tag] {
         switch size {
         case .Village:
-            return (.Poor, .Steady, .Militia)
+            return [Prosperity.Poor.toTag(), Population.Steady.toTag(), Defenses.Militia.toTag()]
         case .Town:
-            return (.Moderate, .Steady, .Watch)
+            return [Prosperity.Moderate.toTag(), Population.Steady.toTag(), Defenses.Watch.toTag()]
         case .Keep:
-            return (.Poor, .Shrinking, .Guard)
+            return [Prosperity.Poor.toTag(), Population.Shrinking.toTag(), Defenses.Guard.toTag()]
         case .City:
-            return (.Moderate, .Steady, .Guard)
+            return [Prosperity.Moderate.toTag(), Population.Steady.toTag(), Defenses.Guard.toTag()]
         }
     }
     
     init(size:Size) {
         self.tags = []
         tags.insert(Tag(key: "Size", value: size.description, description: size.explanation))
-        (self.prosperity, self.population, self.defenses) = defaults(size)
+        for tag in defaults(size) {
+            tags.insert(tag)
+        }
     }
     
     convenience init(size:Size, name: String) {
